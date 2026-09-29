@@ -1,0 +1,14 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="local.jc.mainraw" android:versionCode="18" android:versionName="0.3.13-ptc-highlight">
+    <uses-sdk android:minSdkVersion="29" android:targetSdkVersion="32" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+    <uses-feature android:name="android.hardware.camera.raw" android:required="true" />
+    <application android:label="JC 主摄 RAW 实验" android:theme="@android:style/Theme.Material.Light.NoActionBar" android:allowBackup="false" android:debuggable="false">
+        <service android:name=".CaptureService" android:exported="false" />
+        <activity android:name=".MainActivity" android:exported="false" android:screenOrientation="portrait" />
+        <activity android:name=".PtcActivity" android:exported="false" android:launchMode="singleTop" android:screenOrientation="portrait" />
+        <activity android:name=".NativePhotoActivity" android:launchMode="singleTop" android:exported="true" android:screenOrientation="portrait">
+            <intent-filter><action android:name="android.intent.action.MAIN" /><category android:name="android.intent.category.LAUNCHER" /></intent-filter>
+        </activity>
+    </application>
+</manifest>

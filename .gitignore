@@ -1,0 +1,11 @@
+*.apk
+*.aab
+*.dng
+*.raw
+*.bin
+*.so
+*.keystore
+*.jks
+*.log
+*.xml.json
+__pycache__/
