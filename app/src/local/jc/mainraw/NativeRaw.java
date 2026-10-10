@@ -49,8 +49,8 @@ public strictfp final class NativeRaw {
         require(a.iso==ISO&&b.iso==ISO&&a.mode==5&&b.mode==5,"Pair not ISO50 mode5");
     }
     public static void unpack(byte[] packed,int bits,int[] out)throws IOException {
-        require(out.length==W&&packed.length==W*(bits==14?7:5)/4&&(bits==14||bits==10),"Wrong MIPI row length");
-        for(int x=0,p=0;x<W;x+=4,p+=bits==14?7:5){
+        require(out.length>=4&&out.length<=8192&&out.length%4==0&&packed.length==out.length*(bits==14?7:5)/4&&(bits==14||bits==10),"Wrong MIPI row length");
+        for(int x=0,p=0;x<out.length;x+=4,p+=bits==14?7:5){
             if(bits==14){int v4=packed[p+4]&255,v5=packed[p+5]&255,v6=packed[p+6]&255;
                 out[x]=((packed[p]&255)<<6)|(v4&63);out[x+1]=((packed[p+1]&255)<<6)|(v4>>6)|((v5&15)<<2);
                 out[x+2]=((packed[p+2]&255)<<6)|(v5>>4)|((v6&3)<<4);out[x+3]=((packed[p+3]&255)<<6)|(v6>>2);

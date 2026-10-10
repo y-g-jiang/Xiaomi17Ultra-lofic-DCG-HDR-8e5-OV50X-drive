@@ -1,14 +1,27 @@
-<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="local.jc.mainraw" android:versionCode="18" android:versionName="0.3.13-ptc-highlight">
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="local.jc.mainraw" android:versionCode="46" android:versionName="0.6.3-restore-exit">
     <uses-sdk android:minSdkVersion="29" android:targetSdkVersion="32" />
     <uses-permission android:name="android.permission.CAMERA" />
+    <!-- Photo is allowlisted as a system camera client.  Keep this declaration
+         explicit so a privileged installation can be tested without changing
+         the capture code or impersonating Photo in the package identity. -->
+    <uses-permission android:name="android.permission.SYSTEM_CAMERA" />
     <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
     <uses-feature android:name="android.hardware.camera.raw" android:required="true" />
-    <application android:label="JC 主摄 RAW 实验" android:theme="@android:style/Theme.Material.Light.NoActionBar" android:allowBackup="false" android:debuggable="false">
+    <instrumentation android:name=".NativeRawProbeInstrumentation" android:targetPackage="local.jc.mainraw" android:functionalTest="true" />
+    <application android:extractNativeLibs="true" android:label="JC 相机" android:theme="@android:style/Theme.Material.Light.NoActionBar" android:allowBackup="false" android:debuggable="false">
         <service android:name=".CaptureService" android:exported="false" />
+        <activity android:name=".HpeCameraActivity" android:exported="true" android:screenOrientation="portrait" />
         <activity android:name=".MainActivity" android:exported="false" android:screenOrientation="portrait" />
         <activity android:name=".PtcActivity" android:exported="false" android:launchMode="singleTop" android:screenOrientation="portrait" />
-        <activity android:name=".NativePhotoActivity" android:launchMode="singleTop" android:exported="true" android:screenOrientation="portrait">
+        <activity android:name=".QBayerProbeActivity" android:exported="true" android:screenOrientation="portrait" />
+        <activity android:name=".RawStreamProbeActivity" android:exported="false" android:screenOrientation="portrait" />
+        <activity android:name=".FastHybridActivity" android:exported="true" android:launchMode="singleTask" android:screenOrientation="portrait" />
+        <activity android:name=".NativePhotoActivity" android:launchMode="singleTop" android:exported="true" android:screenOrientation="portrait" />
+        <activity android:name=".Native50Activity" android:launchMode="singleTop" android:exported="true" android:screenOrientation="portrait" />
+        <activity android:name=".ClassicHdrActivity" android:launchMode="singleTop" android:exported="true" android:screenOrientation="portrait">
             <intent-filter><action android:name="android.intent.action.MAIN" /><category android:name="android.intent.category.LAUNCHER" /></intent-filter>
+        </activity>
+        <activity android:name=".PairPhotoActivity" android:launchMode="singleTop" android:exported="true" android:screenOrientation="portrait">
         </activity>
     </application>
 </manifest>

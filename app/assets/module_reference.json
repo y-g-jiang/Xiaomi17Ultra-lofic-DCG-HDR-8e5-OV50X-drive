@@ -1,0 +1,159 @@
+{
+  "referenceOnly": true,
+  "phoneRomAnalyzed": "OS3.0.312.0.WPACNXM / Android 16 / nezha",
+  "sourceModuleTarget": "A17 EUXM 3.0.332, per module description",
+  "warning": "These stock Photo fusion recipes are not invoked by setting the app session parameters. sensor_mode and DCG mode are different enums. ev_value units have not been mapped to EV stops.",
+  "sharedModuleLibrarySha256": "3845dc69fde122675b4a7cc9dbf89aef0ce956e8b3a05ebad4ad8aa9f8b6cbef",
+  "modules": [
+    {
+      "variant": "Photo",
+      "algorithm": "SE",
+      "leafChangesAgainstPhone": 33,
+      "archive": {
+        "size": 1101424,
+        "sha256": "240c8d72b8097542a6636258a07351b94d5e3382006a458cf7f1058fe502663e"
+      },
+      "configSha256": "a42c8029f338c4649099b98fbf2f709fcca4258b2a9976a462cf1871f5b8d501",
+      "jsonPath": "/AlgoType_SE/LIST/5",
+      "recipe": {
+        "Description": "V_5: Lofic 4*ev0 + 4*ev-",
+        "frames": 8,
+        "ev_value": [
+          0,
+          -3,
+          0,
+          -3,
+          0,
+          -3,
+          0,
+          -3
+        ],
+        "capture_mode": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "adrc_on": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "sensor_mode": [
+          17,
+          17,
+          17,
+          17,
+          17,
+          17,
+          17,
+          17
+        ],
+        "ois_sync": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "motion_exp_type": [
+          -1,
+          -1,
+          -1,
+          -1,
+          -1,
+          -1,
+          -1,
+          -1
+        ]
+      }
+    },
+    {
+      "variant": "HDR",
+      "algorithm": "HDR",
+      "leafChangesAgainstPhone": 27,
+      "archive": {
+        "size": 1103922,
+        "sha256": "0d6286c830183192f97ab346dbed915b9861a3bdef4d6e195e467195c19c7736"
+      },
+      "configSha256": "6eedfc195a6431d12a30180d80c9a6586a5bce4af65c182636d827c9ab234f10",
+      "jsonPath": "/AlgoType_HDR/LIST/9",
+      "recipe": {
+        "Description": "V_9: Lofic zsl 4ev0, 4ev-",
+        "frames": 8,
+        "ev_value": [
+          0,
+          -3,
+          0,
+          -3,
+          0,
+          -3,
+          0,
+          -3
+        ],
+        "capture_mode": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "adrc_on": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "sensor_mode": [
+          17,
+          17,
+          17,
+          17,
+          17,
+          17,
+          17,
+          17
+        ],
+        "ois_sync": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "motion_exp_type": [
+          -1,
+          -1,
+          -1,
+          -1,
+          -1,
+          -1,
+          -1,
+          -1
+        ]
+      }
+    }
+  ]
+}

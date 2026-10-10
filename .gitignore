@@ -9,3 +9,12 @@
 *.log
 *.xml.json
 __pycache__/
+build/
+dist/
+stock/
+*.partial
+!app/assets/*.so
+!app/assets/*.bin
+!app/native/prebuilt/arm64-v8a/*.so
+!tools/photo_v5/payload/*.so
+!prebuilt/*.apk

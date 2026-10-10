@@ -1,0 +1,2737 @@
+{
+  "Description": "Xiaomi SmartAE config file - Arbitrator",
+  "phone_code": "P1",
+  "jsonVersion": "Arbi_V2.0-20251208",
+  "ALGO_PRIORITY": {
+    "NORMAL": {
+      "FRONT": {
+        "MOTION": [
+          "AlgoType_SN_F",
+          "AlgoType_HDR_F",
+          "AlgoType_INVALID"
+        ],
+        "NON-MOTION": [
+          "AlgoType_SN_F",
+          "AlgoType_HDR_F",
+          "AlgoType_INVALID"
+        ]
+      },
+      "REAR": {
+        "MOTION": [
+          "AlgoType_SE",
+          "AlgoType_HDRSR",
+          "AlgoType_HDR",
+          "AlgoType_SR",
+          "AlgoType_SNSC",
+          "AlgoType_AINR"
+        ],
+        "NON-MOTION": [
+          "AlgoType_SE",
+          "AlgoType_ELL",
+          "AlgoType_HDRSR",
+          "AlgoType_HDR",
+          "AlgoType_SR",
+          "AlgoType_AINR"
+        ]
+      }
+    },
+    "BOKEH": {
+      "FRONT": {
+        "MOTION": [
+          "AlgoType_SN_F",
+          "AlgoType_HDR_F",
+          "AlgoType_INVALID"
+        ],
+        "NON-MOTION": [
+          "AlgoType_SN_F",
+          "AlgoType_HDR_F",
+          "AlgoType_INVALID"
+        ]
+      },
+      "REAR": {
+        "MOTION": [
+          "AlgoType_SE",
+          "AlgoType_HDRSR",
+          "AlgoType_HDR",
+          "AlgoType_SR",
+          "AlgoType_AINR"
+        ],
+        "NON-MOTION": [
+          "AlgoType_SE",
+          "AlgoType_HDRSR",
+          "AlgoType_HDR",
+          "AlgoType_SR",
+          "AlgoType_AINR"
+        ]
+      }
+    },
+    "ManualUltraRAW": {
+      "REAR": {
+        "NON-MOTION": [
+          "AlgoType_ELL",
+          "AlgoType_SE",
+          "AlgoType_HDRSR",
+          "AlgoType_HDR",
+          "AlgoType_AINR"
+        ]
+      }
+    },
+    "ManualUltraRAW50M": {
+      "REAR": {
+        "NON-MOTION": [
+          "AlgoType_AINR50M_LL"
+        ]
+      }
+    },
+    "Fastshot": {
+      "REAR": {
+        "MOTION": [
+          "AlgoType_HDRSR",
+          "AlgoType_HDR",
+          "AlgoType_SR",
+          "AlgoType_SNSC",
+          "AlgoType_AINR"
+        ],
+        "NON-MOTION": [
+          "AlgoType_HDRSR",
+          "AlgoType_HDR",
+          "AlgoType_SR",
+          "AlgoType_AINR"
+        ],
+        "PANNING": [
+          "AlgoType_HDRSR",
+          "AlgoType_HDR",
+          "AlgoType_SR",
+          "AlgoType_SNSC",
+          "AlgoType_AINR"
+        ]
+      }
+    },
+    "Documents": {
+      "REAR": {
+        "NON-MOTION": [
+          "AlgoType_SR",
+          "AlgoType_AINR"
+        ]
+      }
+    },
+    "SuperMacro": {
+      "REAR": {
+        "NON-MOTION": [
+          "AlgoType_SR"
+        ]
+      }
+    },
+    "50M": {
+      "REAR": {
+        "NON-MOTION": [
+          "AlgoType_ELL",
+          "AlgoType_SE",
+          "AlgoType_HDRSR",
+          "AlgoType_HDR",
+          "AlgoType_SR",
+          "AlgoType_AINR"
+        ]
+      }
+    },
+    "Legend": {
+      "REAR": {
+        "MOTION": [
+          "AlgoType_SR",
+          "AlgoType_AINR"
+        ],
+        "NON-MOTION": [
+          "AlgoType_SR",
+          "AlgoType_AINR"
+        ]
+      }
+    },
+    "200M": {
+      "REAR": {
+        "NON-MOTION": [
+          "AlgoType_ELL",
+          "AlgoType_SE",
+          "AlgoType_HDRSR",
+          "AlgoType_HDR",
+          "AlgoType_SR",
+          "AlgoType_AINR"
+        ]
+      }
+    }
+  },
+  "ALGO_TRIGGER": {
+    "NORMAL": {
+      "REAR": {
+        "AlgoType_ELL": {
+          "Description": "ELL trigger conditions",
+          "counts": 2,
+          "CONDITIONS": [
+            {
+              "condition": "toast_card_mask",
+              "operator": "!=",
+              "value": [
+                2,
+                2
+              ]
+            },
+            {
+              "condition": "ui_motion",
+              "operator": "=",
+              "value": [
+                0,
+                0
+              ]
+            },
+            {
+              "condition": "ai_info",
+              "operator": "!=",
+              "value": [
+                983040,
+                -1
+              ]
+            },
+            {
+              "condition": "luxindex",
+              "operator": "<",
+              "value": [
+                -1,
+                300
+              ]
+            },
+            {
+              "condition": "ui_sn",
+              "operator": "=",
+              "value": [
+                1,
+                1
+              ]
+            },
+            {
+              "condition": "ev_offset",
+              "operator": "=",
+              "value": [
+                0,
+                0
+              ]
+            },
+            {
+              "condition": "is_led_on",
+              "operator": "=",
+              "value": [
+                0,
+                0
+              ]
+            },
+            {
+              "condition": "is_ell",
+              "operator": "=",
+              "value": [
+                1,
+                1
+              ]
+            },
+            {
+              "condition": "flash_mode",
+              "operator": "=",
+              "value": [
+                3,
+                3
+              ]
+            },
+            {
+              "condition": "uizoom",
+              "operator": "<=",
+              "value": [
+                20,
+                20
+              ]
+            }
+          ]
+        },
+        "AlgoType_SE": {
+          "Description": "SE trigger conditions",
+          "counts": 3,
+          "CONDITIONS": [
+            {
+              "condition": "toast_card_mask",
+              "operator": "!=",
+              "value": [
+                2,
+                2,
+                2
+              ]
+            },
+            {
+              "condition": "ai_info",
+              "operator": "=",
+              "value": [
+                983040,
+                -1,
+                -1
+              ]
+            },
+            {
+              "condition": "ai_info",
+              "operator": "!=",
+              "value": [
+                -1,
+                983040,
+                -1
+              ]
+            },
+            {
+              "condition": "luxindex",
+              "operator": ">=",
+              "value": [
+                270,
+                -1,
+                -1
+              ]
+            },
+            {
+              "condition": "ui_motion",
+              "operator": "=",
+              "value": [
+                -1,
+                0,
+                0
+              ]
+            },
+            {
+              "condition": "ui_livephoto",
+              "operator": "=",
+              "value": [
+                -1,
+                1,
+                0
+              ]
+            },
+            {
+              "condition": "is_exceed_se_lux",
+              "operator": "=",
+              "value": [
+                -1,
+                1,
+                -1
+              ]
+            },
+            {
+              "condition": "ui_sn",
+              "operator": "=",
+              "value": [
+                -1,
+                1,
+                1
+              ]
+            },
+            {
+              "condition": "is_se",
+              "operator": "=",
+              "value": [
+                -1,
+                -1,
+                -1
+              ]
+            }
+          ]
+        },
+        "AlgoType_HDRSR": {
+          "Description": "HDSR trigger conditions",
+          "counts": 4,
+          "CONDITIONS": [
+            {
+              "condition": "toast_card_mask",
+              "operator": "!=",
+              "value": [
+                2,
+                2,
+                2,
+                2
+              ]
+            },
+            {
+              "condition": "ai_info",
+              "operator": "=",
+              "value": [
+                983040,
+                -1,
+                -1,
+                -1
+              ]
+            },
+            {
+              "condition": "ai_info",
+              "operator": "!=",
+              "value": [
+                -1,
+                983040,
+                983040,
+                983040
+              ]
+            },
+            {
+              "condition": "luxindex",
+              "operator": "<",
+              "value": [
+                -1,
+                -1,
+                -1,
+                -1
+              ]
+            },
+            {
+              "condition": "ui_motion",
+              "operator": "=",
+              "value": [
+                -1,
+                -1,
+                0,
+                0
+              ]
+            },
+            {
+              "condition": "ui_livephoto",
+              "operator": "=",
+              "value": [
+                -1,
+                -1,
+                1,
+                0
+              ]
+            },
+            {
+              "condition": "is_exceed_se_lux",
+              "operator": "=",
+              "value": [
+                -1,
+                -1,
+                0,
+                -1
+              ]
+            },
+            {
+              "condition": "ui_hdr",
+              "operator": "=",
+              "value": [
+                1,
+                1,
+                1,
+                1
+              ]
+            },
+            {
+              "condition": "scene_mask",
+              "operator": "=",
+              "value": [
+                -1,
+                -1,
+                6,
+                -1
+              ]
+            },
+            {
+              "condition": "sensor_mode",
+              "operator": "=",
+              "value": [
+                -1,
+                131072,
+                -1,
+                -1
+              ]
+            },
+            {
+              "condition": "sensor_mode",
+              "operator": "!=",
+              "value": [
+                -1,
+                -1,
+                131072,
+                131072
+              ]
+            },
+            {
+              "condition": "uizoom",
+              "operator": ">=",
+              "value": [
+                1.4,
+                1.4,
+                1.4,
+                1.4
+              ]
+            },
+            {
+              "condition": "is_hdr",
+              "operator": "=",
+              "value": [
+                1,
+                -1,
+                -1,
+                1
+              ]
+            }
+          ]
+        },
+        "AlgoType_HDR": {
+          "Description": "HDR trigger conditions",
+          "counts": 4,
+          "CONDITIONS": [
+            {
+              "condition": "toast_card_mask",
+              "operator": "!=",
+              "value": [
+                2,
+                2,
+                2,
+                2
+              ]
+            },
+            {
+              "condition": "ai_info",
+              "operator": "=",
+              "value": [
+                983040,
+                -1,
+                -1,
+                -1
+              ]
+            },
+            {
+              "condition": "ai_info",
+              "operator": "!=",
+              "value": [
+                -1,
+                983040,
+                983040,
+                983040
+              ]
+            },
+            {
+              "condition": "luxindex",
+              "operator": "<",
+              "value": [
+                -1,
+                -1,
+                -1,
+                -1
+              ]
+            },
+            {
+              "condition": "ui_motion",
+              "operator": "=",
+              "value": [
+                -1,
+                -1,
+                0,
+                0
+              ]
+            },
+            {
+              "condition": "ui_livephoto",
+              "operator": "=",
+              "value": [
+                -1,
+                -1,
+                1,
+                0
+              ]
+            },
+            {
+              "condition": "is_exceed_se_lux",
+              "operator": "=",
+              "value": [
+                -1,
+                -1,
+                0,
+                -1
+              ]
+            },
+            {
+              "condition": "ui_hdr",
+              "operator": "=",
+              "value": [
+                1,
+                1,
+                1,
+                1
+              ]
+            },
+            {
+              "condition": "scene_mask",
+              "operator": "=",
+              "value": [
+                -1,
+                -1,
+                6,
+                -1
+              ]
+            },
+            {
+              "condition": "sensor_mode",
+              "operator": "=",
+              "value": [
+                -1,
+                131072,
+                -1,
+                -1
+              ]
+            },
+            {
+              "condition": "sensor_mode",
+              "operator": "!=",
+              "value": [
+                -1,
+                -1,
+                131072,
+                131072
+              ]
+            },
+            {
+              "condition": "uizoom",
+              "operator": "<",
+              "value": [
+                1.4,
+                1.4,
+                1.4,
+                1.4
+              ]
+            },
+            {
+              "condition": "is_hdr",
+              "operator": "=",
+              "value": [
+                1,
+                -1,
+                -1,
+                1
+              ]
+            }
+          ]
+        },
+        "AlgoType_SR": {
+          "Description": "SR trigger conditions",
+          "counts": 4,
+          "CONDITIONS": [
+            {
+              "condition": "toast_card_mask",
+              "operator": "=",
+              "value": [
+                2,
+                -1,
+                -1,
+                -1
+              ]
+            },
+            {
+              "condition": "toast_card_mask",
+              "operator": "!=",
+              "value": [
+                -1,
+                2,
+                2,
+                2
+              ]
+            },
+            {
+              "condition": "ai_info",
+              "operator": "=",
+              "value": [
+                -1,
+                983040,
+                -1,
+                -1
+              ]
+            },
+            {
+              "condition": "ai_info",
+              "operator": "!=",
+              "value": [
+                -1,
+                -1,
+                983040,
+                983040
+              ]
+            },
+            {
+              "condition": "luxindex",
+              "operator": "<",
+              "value": [
+                -1,
+                -1,
+                -1,
+                -1
+              ]
+            },
+            {
+              "condition": "ui_motion",
+              "operator": "=",
+              "value": [
+                -1,
+                -1,
+                2,
+                0
+              ]
+            },
+            {
+              "condition": "sensor_type",
+              "operator": "!=",
+              "value": [
+                2,
+                2,
+                2,
+                2
+              ]
+            },
+            {
+              "condition": "sensor_mode",
+              "operator": "=",
+              "value": [
+                -1,
+                -1,
+                32768,
+                -1
+              ]
+            },
+            {
+              "condition": "sensor_mode",
+              "operator": "!=",
+              "value": [
+                -1,
+                131072,
+                131073,
+                131072
+              ]
+            },
+            {
+              "condition": "uizoom",
+              "operator": ">=",
+              "value": [
+                1.4,
+                1.4,
+                1.4,
+                1.4
+              ]
+            }
+          ]
+        },
+        "AlgoType_SNSC": {
+          "Description": "SNSC trigger conditions",
+          "counts": 1,
+          "CONDITIONS": [
+            {
+              "condition": "toast_card_mask",
+              "operator": "!=",
+              "value": [
+                2
+              ]
+            },
+            {
+              "condition": "ai_info",
+              "operator": "!=",
+              "value": [
+                983040
+              ]
+            },
+            {
+              "condition": "sensor_mode",
+              "operator": "!=",
+              "value": [
+                163840
+              ]
+            },
+            {
+              "condition": "ui_motion",
+              "operator": "=",
+              "value": [
+                2
+              ]
+            },
+            {
+              "condition": "sensor_type",
+              "operator": "!=",
+              "value": [
+                2
+              ]
+            }
+          ]
+        },
+        "AlgoType_AINR": {
+          "Description": "AINR trigger conditions",
+          "counts": 1,
+          "CONDITIONS": null
+        }
+      },
+      "FRONT": {
+        "AlgoType_HDR_F": {
+          "Description": "HDR front trigger conditions",
+          "counts": 2,
+          "CONDITIONS": [
+            {
+              "condition": "camera_mode",
+              "operator": "=",
+              "value": [
+                1,
+                1
+              ]
+            },
+            {
+              "condition": "ui_livephoto",
+              "operator": "=",
+              "value": [
+                1,
+                0
+              ]
+            },
+            {
+              "condition": "is_exceed_se_lux",
+              "operator": "=",
+              "value": [
+                0,
+                -1
+              ]
+            },
+            {
+              "condition": "ui_hdr",
+              "operator": "=",
+              "value": [
+                1,
+                1
+              ]
+            },
+            {
+              "condition": "scene_mask",
+              "operator": "=",
+              "value": [
+                6,
+                -1
+              ]
+            },
+            {
+              "condition": "is_hdr",
+              "operator": "=",
+              "value": [
+                -1,
+                1
+              ]
+            }
+          ]
+        },
+        "AlgoType_SN_F": {
+          "Description": "SN front trigger conditions",
+          "counts": 2,
+          "CONDITIONS": [
+            {
+              "condition": "camera_mode",
+              "operator": "=",
+              "value": [
+                1,
+                1
+              ]
+            },
+            {
+              "condition": "ui_livephoto",
+              "operator": "=",
+              "value": [
+                1,
+                0
+              ]
+            },
+            {
+              "condition": "is_exceed_se_lux",
+              "operator": "=",
+              "value": [
+                1,
+                -1
+              ]
+            },
+            {
+              "condition": "ui_sn",
+              "operator": "=",
+              "value": [
+                1,
+                1
+              ]
+            },
+            {
+              "condition": "is_se",
+              "operator": "=",
+              "value": [
+                -1,
+                1
+              ]
+            }
+          ]
+        },
+        "AlgoType_INVALID": {
+          "Description": "MMF trigger conditions",
+          "counts": 1,
+          "CONDITIONS": null
+        }
+      }
+    },
+    "BOKEH": {
+      "REAR": {
+        "AlgoType_SE": {
+          "Description": "SE trigger conditions",
+          "counts": 2,
+          "CONDITIONS": [
+            {
+              "condition": "camera_mode",
+              "operator": "=",
+              "value": [
+                2,
+                2
+              ]
+            },
+            {
+              "condition": "ui_livephoto",
+              "operator": "=",
+              "value": [
+                0,
+                1
+              ]
+            },
+            {
+              "condition": "is_exceed_se_lux",
+              "operator": "=",
+              "value": [
+                -1,
+                1
+              ]
+            },
+            {
+              "condition": "ui_sn",
+              "operator": "=",
+              "value": [
+                1,
+                1
+              ]
+            },
+            {
+              "condition": "is_se",
+              "operator": "=",
+              "value": [
+                1,
+                -1
+              ]
+            }
+          ]
+        },
+        "AlgoType_HDRSR": {
+          "Description": "HDSR trigger conditions",
+          "counts": 2,
+          "CONDITIONS": [
+            {
+              "condition": "camera_mode",
+              "operator": "=",
+              "value": [
+                2,
+                2
+              ]
+            },
+            {
+              "condition": "ui_livephoto",
+              "operator": "=",
+              "value": [
+                1,
+                0
+              ]
+            },
+            {
+              "condition": "is_exceed_se_lux",
+              "operator": "=",
+              "value": [
+                0,
+                -1
+              ]
+            },
+            {
+              "condition": "ui_hdr",
+              "operator": "=",
+              "value": [
+                1,
+                1
+              ]
+            },
+            {
+              "condition": "scene_mask",
+              "operator": "=",
+              "value": [
+                6,
+                -1
+              ]
+            },
+            {
+              "condition": "uizoom",
+              "operator": ">=",
+              "value": [
+                1.4,
+                1.4
+              ]
+            },
+            {
+              "condition": "is_hdr",
+              "operator": "=",
+              "value": [
+                -1,
+                1
+              ]
+            }
+          ]
+        },
+        "AlgoType_HDR": {
+          "Description": "HDR trigger conditions",
+          "counts": 2,
+          "CONDITIONS": [
+            {
+              "condition": "camera_mode",
+              "operator": "=",
+              "value": [
+                2,
+                2
+              ]
+            },
+            {
+              "condition": "ui_livephoto",
+              "operator": "=",
+              "value": [
+                1,
+                0
+              ]
+            },
+            {
+              "condition": "is_exceed_se_lux",
+              "operator": "=",
+              "value": [
+                0,
+                -1
+              ]
+            },
+            {
+              "condition": "ui_hdr",
+              "operator": "=",
+              "value": [
+                1,
+                1
+              ]
+            },
+            {
+              "condition": "scene_mask",
+              "operator": "=",
+              "value": [
+                6,
+                -1
+              ]
+            },
+            {
+              "condition": "uizoom",
+              "operator": "<",
+              "value": [
+                1.4,
+                1.4
+              ]
+            },
+            {
+              "condition": "is_hdr",
+              "operator": "=",
+              "value": [
+                -1,
+                1
+              ]
+            }
+          ]
+        },
+        "AlgoType_SR": {
+          "Description": "SR trigger conditions",
+          "counts": 1,
+          "CONDITIONS": [
+            {
+              "condition": "camera_mode",
+              "operator": "=",
+              "value": [
+                2
+              ]
+            },
+            {
+              "condition": "sensor_mode",
+              "operator": "!=",
+              "value": [
+                131072
+              ]
+            },
+            {
+              "condition": "uizoom",
+              "operator": ">=",
+              "value": [
+                1.4
+              ]
+            },
+            {
+              "condition": "sensor_type",
+              "operator": "!=",
+              "value": [
+                2
+              ]
+            }
+          ]
+        },
+        "AlgoType_AINR": {
+          "Description": "AINR trigger conditions",
+          "counts": 1,
+          "CONDITIONS": null
+        }
+      },
+      "FRONT": {
+        "AlgoType_HDR_F": {
+          "Description": "HDR front trigger conditions",
+          "counts": 2,
+          "CONDITIONS": [
+            {
+              "condition": "camera_mode",
+              "operator": "=",
+              "value": [
+                2,
+                2
+              ]
+            },
+            {
+              "condition": "ui_livephoto",
+              "operator": "=",
+              "value": [
+                1,
+                0
+              ]
+            },
+            {
+              "condition": "is_exceed_se_lux",
+              "operator": "=",
+              "value": [
+                0,
+                -1
+              ]
+            },
+            {
+              "condition": "ui_hdr",
+              "operator": "=",
+              "value": [
+                1,
+                1
+              ]
+            },
+            {
+              "condition": "scene_mask",
+              "operator": "=",
+              "value": [
+                6,
+                -1
+              ]
+            },
+            {
+              "condition": "is_hdr",
+              "operator": "=",
+              "value": [
+                -1,
+                1
+              ]
+            }
+          ]
+        },
+        "AlgoType_SN_F": {
+          "Description": "SN front trigger conditions",
+          "counts": 2,
+          "CONDITIONS": [
+            {
+              "condition": "camera_mode",
+              "operator": "=",
+              "value": [
+                2,
+                2
+              ]
+            },
+            {
+              "condition": "ui_livephoto",
+              "operator": "=",
+              "value": [
+                1,
+                0
+              ]
+            },
+            {
+              "condition": "is_exceed_se_lux",
+              "operator": "=",
+              "value": [
+                1,
+                -1
+              ]
+            },
+            {
+              "condition": "ui_sn",
+              "operator": "=",
+              "value": [
+                1,
+                1
+              ]
+            },
+            {
+              "condition": "is_se",
+              "operator": "=",
+              "value": [
+                -1,
+                1
+              ]
+            }
+          ]
+        },
+        "AlgoType_INVALID": {
+          "Description": "MMF trigger conditions",
+          "counts": 1,
+          "CONDITIONS": null
+        }
+      }
+    },
+    "ManualUltraRAW": {
+      "REAR": {
+        "AlgoType_ELL": {
+          "Description": "ELL trigger conditions",
+          "counts": 1,
+          "CONDITIONS": [
+            {
+              "condition": "camera_mode",
+              "operator": "=",
+              "value": [
+                16
+              ]
+            },
+            {
+              "condition": "is_manual_exp",
+              "operator": "=",
+              "value": [
+                0
+              ]
+            },
+            {
+              "condition": "ev_offset",
+              "operator": "=",
+              "value": [
+                0
+              ]
+            },
+            {
+              "condition": "is_ell",
+              "operator": "=",
+              "value": [
+                1
+              ]
+            },
+            {
+              "condition": "flash_mode",
+              "operator": "=",
+              "value": [
+                3
+              ]
+            },
+            {
+              "condition": "uizoom",
+              "operator": "<=",
+              "value": [
+                20
+              ]
+            }
+          ]
+        },
+        "AlgoType_SE": {
+          "Description": "SN trigger conditions",
+          "counts": 1,
+          "CONDITIONS": [
+            {
+              "condition": "camera_mode",
+              "operator": "=",
+              "value": [
+                16
+              ]
+            },
+            {
+              "condition": "is_manual_exp",
+              "operator": "=",
+              "value": [
+                0
+              ]
+            },
+            {
+              "condition": "is_se",
+              "operator": "=",
+              "value": [
+                1
+              ]
+            }
+          ]
+        },
+        "AlgoType_HDRSR": {
+          "Description": "HDSR trigger conditions",
+          "counts": 1,
+          "CONDITIONS": [
+            {
+              "condition": "camera_mode",
+              "operator": "=",
+              "value": [
+                16
+              ]
+            },
+            {
+              "condition": "is_manual_exp",
+              "operator": "=",
+              "value": [
+                0
+              ]
+            },
+            {
+              "condition": "sensor_type",
+              "operator": "=",
+              "value": [
+                12
+              ]
+            },
+            {
+              "condition": "is_hdr",
+              "operator": "=",
+              "value": [
+                1
+              ]
+            }
+          ]
+        },
+        "AlgoType_HDR": {
+          "Description": "HDR trigger conditions",
+          "counts": 1,
+          "CONDITIONS": [
+            {
+              "condition": "camera_mode",
+              "operator": "=",
+              "value": [
+                16
+              ]
+            },
+            {
+              "condition": "sensor_type",
+              "operator": "=",
+              "value": [
+                3
+              ]
+            },
+            {
+              "condition": "is_manual_exp",
+              "operator": "=",
+              "value": [
+                0
+              ]
+            },
+            {
+              "condition": "is_hdr",
+              "operator": "=",
+              "value": [
+                1
+              ]
+            }
+          ]
+        },
+        "AlgoType_AINR": {
+          "Description": "AINR trigger conditions",
+          "counts": 1,
+          "CONDITIONS": null
+        }
+      }
+    },
+    "ManualUltraRAW50M": {
+      "REAR": {
+        "AlgoType_AINR50M_LL": {
+          "Description": "AINR50M LL trigger conditions",
+          "counts": 1,
+          "CONDITIONS": [
+            {
+              "condition": "camera_mode",
+              "operator": "=",
+              "value": [
+                128
+              ]
+            },
+            {
+              "condition": "sensor_type",
+              "operator": "=",
+              "value": [
+                1
+              ]
+            }
+          ]
+        }
+      }
+    },
+    "Fastshot": {
+      "REAR": {
+        "AlgoType_HDRSR": {
+          "Description": "HDSR trigger conditions",
+          "counts": 1,
+          "CONDITIONS": [
+            {
+              "condition": "camera_mode",
+              "operator": "=",
+              "value": [
+                512
+              ]
+            },
+            {
+              "condition": "sensor_mode",
+              "operator": "=",
+              "value": [
+                131072
+              ]
+            },
+            {
+              "condition": "uizoom",
+              "operator": ">=",
+              "value": [
+                1.4
+              ]
+            }
+          ]
+        },
+        "AlgoType_HDR": {
+          "Description": "HDR trigger conditions",
+          "counts": 1,
+          "CONDITIONS": [
+            {
+              "condition": "camera_mode",
+              "operator": "=",
+              "value": [
+                512
+              ]
+            },
+            {
+              "condition": "sensor_mode",
+              "operator": "=",
+              "value": [
+                131072
+              ]
+            },
+            {
+              "condition": "uizoom",
+              "operator": "<",
+              "value": [
+                1.4
+              ]
+            }
+          ]
+        },
+        "AlgoType_SNSC": {
+          "Description": "SNSC trigger conditions",
+          "counts": 1,
+          "CONDITIONS": [
+            {
+              "condition": "camera_mode",
+              "operator": "=",
+              "value": [
+                512
+              ]
+            },
+            {
+              "condition": "ui_motion",
+              "operator": "=",
+              "value": [
+                2
+              ]
+            },
+            {
+              "condition": "sensor_mode",
+              "operator": "!=",
+              "value": [
+                163840
+              ]
+            }
+          ]
+        },
+        "AlgoType_SR": {
+          "Description": "SR trigger conditions",
+          "counts": 2,
+          "CONDITIONS": [
+            {
+              "condition": "camera_mode",
+              "operator": "=",
+              "value": [
+                512,
+                512
+              ]
+            },
+            {
+              "condition": "ui_motion",
+              "operator": "=",
+              "value": [
+                2,
+                0
+              ]
+            },
+            {
+              "condition": "sensor_mode",
+              "operator": "=",
+              "value": [
+                32768,
+                -1
+              ]
+            },
+            {
+              "condition": "sensor_mode",
+              "operator": "!=",
+              "value": [
+                131073,
+                131072
+              ]
+            },
+            {
+              "condition": "sensor_type",
+              "operator": "!=",
+              "value": [
+                2,
+                2
+              ]
+            },
+            {
+              "condition": "uizoom",
+              "operator": ">=",
+              "value": [
+                1.4,
+                1.4
+              ]
+            }
+          ]
+        },
+        "AlgoType_AINR": {
+          "Description": "AINR trigger conditions",
+          "counts": 1,
+          "CONDITIONS": null
+        }
+      }
+    },
+    "Documents": {
+      "REAR": {
+        "AlgoType_SR": {
+          "Description": "SR trigger conditions",
+          "counts": 1,
+          "CONDITIONS": [
+            {
+              "condition": "camera_mode",
+              "operator": "=",
+              "value": [
+                2048
+              ]
+            },
+            {
+              "condition": "sensor_mode",
+              "operator": "!=",
+              "value": [
+                131072
+              ]
+            },
+            {
+              "condition": "sensor_type",
+              "operator": "!=",
+              "value": [
+                2
+              ]
+            },
+            {
+              "condition": "uizoom",
+              "operator": ">=",
+              "value": [
+                1.4
+              ]
+            }
+          ]
+        },
+        "AlgoType_AINR": {
+          "Description": "AINR trigger conditions",
+          "counts": 1,
+          "CONDITIONS": null
+        }
+      }
+    },
+    "SuperMacro": {
+      "REAR": {
+        "AlgoType_SR": {
+          "Description": "SR trigger conditions",
+          "counts": 1,
+          "CONDITIONS": [
+            {
+              "condition": "camera_mode",
+              "operator": "=",
+              "value": [
+                4096
+              ]
+            },
+            {
+              "condition": "sensor_mode",
+              "operator": "!=",
+              "value": [
+                131072
+              ]
+            },
+            {
+              "condition": "sensor_type",
+              "operator": "!=",
+              "value": [
+                2
+              ]
+            }
+          ]
+        }
+      }
+    },
+    "50M": {
+      "REAR": {
+        "AlgoType_ELL": {
+          "Description": "ELL trigger conditions",
+          "counts": 3,
+          "CONDITIONS": [
+            {
+              "condition": "camera_mode",
+              "operator": "=",
+              "value": [
+                16384,
+                16384,
+                16384
+              ]
+            },
+            {
+              "condition": "ui_motion",
+              "operator": "=",
+              "value": [
+                0,
+                0,
+                0
+              ]
+            },
+            {
+              "condition": "ui_sn",
+              "operator": "=",
+              "value": [
+                1,
+                1,
+                1
+              ]
+            },
+            {
+              "condition": "ev_offset",
+              "operator": "=",
+              "value": [
+                0,
+                0,
+                0
+              ]
+            },
+            {
+              "condition": "is_led_on",
+              "operator": "=",
+              "value": [
+                0,
+                0,
+                0
+              ]
+            },
+            {
+              "condition": "sensor_type",
+              "operator": "=",
+              "value": [
+                2,
+                13,
+                13
+              ]
+            },
+            {
+              "condition": "sensor_type",
+              "operator": "!=",
+              "value": [
+                13,
+                2,
+                2
+              ]
+            },
+            {
+              "condition": "fullsize_quad_lux",
+              "operator": "<=",
+              "value": [
+                -1,
+                0,
+                1
+              ]
+            },
+            {
+              "condition": "adrc_gain",
+              "operator": ">",
+              "value": [
+                -1,
+                -1,
+                4
+              ]
+            },
+            {
+              "condition": "is_ell",
+              "operator": "=",
+              "value": [
+                1,
+                1,
+                1
+              ]
+            },
+            {
+              "condition": "flash_mode",
+              "operator": "=",
+              "value": [
+                3,
+                3,
+                3
+              ]
+            },
+            {
+              "condition": "uizoom",
+              "operator": "<=",
+              "value": [
+                20,
+                20,
+                20
+              ]
+            }
+          ]
+        },
+        "AlgoType_SE": {
+          "Description": "SE trigger conditions",
+          "counts": 3,
+          "CONDITIONS": [
+            {
+              "condition": "camera_mode",
+              "operator": "=",
+              "value": [
+                16384,
+                16384,
+                16384
+              ]
+            },
+            {
+              "condition": "ui_motion",
+              "operator": "=",
+              "value": [
+                0,
+                0,
+                0
+              ]
+            },
+            {
+              "condition": "ui_sn",
+              "operator": "=",
+              "value": [
+                1,
+                1,
+                1
+              ]
+            },
+            {
+              "condition": "sensor_type",
+              "operator": "=",
+              "value": [
+                2,
+                13,
+                13
+              ]
+            },
+            {
+              "condition": "sensor_type",
+              "operator": "!=",
+              "value": [
+                13,
+                2,
+                2
+              ]
+            },
+            {
+              "condition": "fullsize_quad_lux",
+              "operator": "<=",
+              "value": [
+                -1,
+                0,
+                1
+              ]
+            },
+            {
+              "condition": "adrc_gain",
+              "operator": ">",
+              "value": [
+                -1,
+                -1,
+                4
+              ]
+            },
+            {
+              "condition": "is_se",
+              "operator": "=",
+              "value": [
+                1,
+                1,
+                1
+              ]
+            }
+          ]
+        },
+        "AlgoType_HDRSR": {
+          "Description": "HDR trigger conditions",
+          "counts": 2,
+          "CONDITIONS": [
+            {
+              "condition": "camera_mode",
+              "operator": "=",
+              "value": [
+                16384,
+                16384
+              ]
+            },
+            {
+              "condition": "ui_motion",
+              "operator": "=",
+              "value": [
+                0,
+                0
+              ]
+            },
+            {
+              "condition": "ui_hdr",
+              "operator": "=",
+              "value": [
+                1,
+                1
+              ]
+            },
+            {
+              "condition": "sensor_type",
+              "operator": "=",
+              "value": [
+                12,
+                12
+              ]
+            },
+            {
+              "condition": "fullsize_quad_lux",
+              "operator": "<=",
+              "value": [
+                0,
+                1
+              ]
+            },
+            {
+              "condition": "adrc_gain",
+              "operator": ">",
+              "value": [
+                -1,
+                4
+              ]
+            },
+            {
+              "condition": "is_hdr",
+              "operator": "=",
+              "value": [
+                1,
+                1
+              ]
+            }
+          ]
+        },
+        "AlgoType_HDR": {
+          "Description": "HDR trigger conditions",
+          "counts": 3,
+          "CONDITIONS": [
+            {
+              "condition": "camera_mode",
+              "operator": "=",
+              "value": [
+                16384,
+                16384,
+                16384
+              ]
+            },
+            {
+              "condition": "ui_motion",
+              "operator": "=",
+              "value": [
+                0,
+                0,
+                0
+              ]
+            },
+            {
+              "condition": "ui_hdr",
+              "operator": "=",
+              "value": [
+                1,
+                1,
+                1
+              ]
+            },
+            {
+              "condition": "sensor_type",
+              "operator": "=",
+              "value": [
+                2,
+                1,
+                1
+              ]
+            },
+            {
+              "condition": "fullsize_quad_lux",
+              "operator": "<=",
+              "value": [
+                -1,
+                0,
+                1
+              ]
+            },
+            {
+              "condition": "adrc_gain",
+              "operator": ">",
+              "value": [
+                -1,
+                -1,
+                4
+              ]
+            },
+            {
+              "condition": "is_hdr",
+              "operator": "=",
+              "value": [
+                1,
+                1,
+                1
+              ]
+            }
+          ]
+        },
+        "AlgoType_SR": {
+          "Description": "SR trigger conditions",
+          "counts": 3,
+          "CONDITIONS": [
+            {
+              "condition": "camera_mode",
+              "operator": "=",
+              "value": [
+                16384,
+                16384,
+                16384
+              ]
+            },
+            {
+              "condition": "ui_motion",
+              "operator": "=",
+              "value": [
+                0,
+                0,
+                0
+              ]
+            },
+            {
+              "condition": "sensor_type",
+              "operator": "!=",
+              "value": [
+                3,
+                3,
+                2
+              ]
+            },
+            {
+              "condition": "sensor_type",
+              "operator": "=",
+              "value": [
+                12,
+                12,
+                13
+              ]
+            },
+            {
+              "condition": "fullsize_quad_lux",
+              "operator": "<=",
+              "value": [
+                0,
+                1,
+                1
+              ]
+            },
+            {
+              "condition": "adrc_gain",
+              "operator": "<=",
+              "value": [
+                -1,
+                -1,
+                4
+              ]
+            },
+            {
+              "condition": "adrc_gain",
+              "operator": ">",
+              "value": [
+                -1,
+                4,
+                -1
+              ]
+            }
+          ]
+        },
+        "AlgoType_AINR": {
+          "Description": "AINR trigger conditions",
+          "counts": 1,
+          "CONDITIONS": null
+        }
+      }
+    },
+    "Legend": {
+      "REAR": {
+        "AlgoType_SR": {
+          "Description": "SR trigger conditions",
+          "counts": 1,
+          "CONDITIONS": [
+            {
+              "condition": "camera_mode",
+              "operator": "=",
+              "value": [
+                65536
+              ]
+            },
+            {
+              "condition": "ui_motion",
+              "operator": "=",
+              "value": [
+                0
+              ]
+            },
+            {
+              "condition": "sensor_type",
+              "operator": "!=",
+              "value": [
+                2
+              ]
+            },
+            {
+              "condition": "uizoom",
+              "operator": ">=",
+              "value": [
+                1.4
+              ]
+            }
+          ]
+        },
+        "AlgoType_AINR": {
+          "Description": "AINR trigger conditions",
+          "counts": 1,
+          "CONDITIONS": null
+        }
+      }
+    },
+    "200M": {
+      "REAR": {
+        "AlgoType_ELL": {
+          "Description": "ELL trigger conditions",
+          "counts": 3,
+          "CONDITIONS": [
+            {
+              "condition": "camera_mode",
+              "operator": "=",
+              "value": [
+                131072,
+                131072,
+                131072
+              ]
+            },
+            {
+              "condition": "ui_motion",
+              "operator": "=",
+              "value": [
+                0,
+                0,
+                0
+              ]
+            },
+            {
+              "condition": "ui_sn",
+              "operator": "=",
+              "value": [
+                1,
+                1,
+                1
+              ]
+            },
+            {
+              "condition": "ev_offset",
+              "operator": "=",
+              "value": [
+                0,
+                0,
+                0
+              ]
+            },
+            {
+              "condition": "is_led_on",
+              "operator": "=",
+              "value": [
+                0,
+                0,
+                0
+              ]
+            },
+            {
+              "condition": "sensor_type",
+              "operator": "=",
+              "value": [
+                2,
+                13,
+                13
+              ]
+            },
+            {
+              "condition": "sensor_type",
+              "operator": "!=",
+              "value": [
+                13,
+                2,
+                2
+              ]
+            },
+            {
+              "condition": "fullsize_quad_lux",
+              "operator": "<=",
+              "value": [
+                -1,
+                0,
+                1
+              ]
+            },
+            {
+              "condition": "adrc_gain",
+              "operator": ">",
+              "value": [
+                -1,
+                -1,
+                5
+              ]
+            },
+            {
+              "condition": "is_ell",
+              "operator": "=",
+              "value": [
+                1,
+                1,
+                1
+              ]
+            },
+            {
+              "condition": "flash_mode",
+              "operator": "=",
+              "value": [
+                3,
+                3,
+                3
+              ]
+            },
+            {
+              "condition": "uizoom",
+              "operator": "<=",
+              "value": [
+                20,
+                20,
+                20
+              ]
+            }
+          ]
+        },
+        "AlgoType_SE": {
+          "Description": "SE trigger conditions",
+          "counts": 3,
+          "CONDITIONS": [
+            {
+              "condition": "camera_mode",
+              "operator": "=",
+              "value": [
+                131072,
+                131072,
+                131072
+              ]
+            },
+            {
+              "condition": "ui_motion",
+              "operator": "=",
+              "value": [
+                0,
+                0,
+                0
+              ]
+            },
+            {
+              "condition": "ui_sn",
+              "operator": "=",
+              "value": [
+                1,
+                1,
+                1
+              ]
+            },
+            {
+              "condition": "sensor_type",
+              "operator": "=",
+              "value": [
+                2,
+                13,
+                13
+              ]
+            },
+            {
+              "condition": "sensor_type",
+              "operator": "!=",
+              "value": [
+                13,
+                2,
+                2
+              ]
+            },
+            {
+              "condition": "fullsize_quad_lux",
+              "operator": "<=",
+              "value": [
+                -1,
+                0,
+                1
+              ]
+            },
+            {
+              "condition": "adrc_gain",
+              "operator": ">",
+              "value": [
+                -1,
+                -1,
+                5
+              ]
+            },
+            {
+              "condition": "is_se",
+              "operator": "=",
+              "value": [
+                1,
+                1,
+                1
+              ]
+            }
+          ]
+        },
+        "AlgoType_HDRSR": {
+          "Description": "HDR trigger conditions",
+          "counts": 2,
+          "CONDITIONS": [
+            {
+              "condition": "camera_mode",
+              "operator": "=",
+              "value": [
+                131072,
+                131072
+              ]
+            },
+            {
+              "condition": "ui_motion",
+              "operator": "=",
+              "value": [
+                0,
+                0
+              ]
+            },
+            {
+              "condition": "ui_hdr",
+              "operator": "=",
+              "value": [
+                1,
+                1
+              ]
+            },
+            {
+              "condition": "sensor_type",
+              "operator": "=",
+              "value": [
+                12,
+                12
+              ]
+            },
+            {
+              "condition": "fullsize_quad_lux",
+              "operator": "<=",
+              "value": [
+                0,
+                1
+              ]
+            },
+            {
+              "condition": "adrc_gain",
+              "operator": ">",
+              "value": [
+                -1,
+                5
+              ]
+            },
+            {
+              "condition": "is_hdr",
+              "operator": "=",
+              "value": [
+                1,
+                1
+              ]
+            }
+          ]
+        },
+        "AlgoType_HDR": {
+          "Description": "HDR trigger conditions",
+          "counts": 3,
+          "CONDITIONS": [
+            {
+              "condition": "camera_mode",
+              "operator": "=",
+              "value": [
+                131072,
+                131072,
+                131072
+              ]
+            },
+            {
+              "condition": "ui_motion",
+              "operator": "=",
+              "value": [
+                0,
+                0,
+                0
+              ]
+            },
+            {
+              "condition": "ui_hdr",
+              "operator": "=",
+              "value": [
+                1,
+                1,
+                1
+              ]
+            },
+            {
+              "condition": "sensor_type",
+              "operator": "=",
+              "value": [
+                2,
+                1,
+                1
+              ]
+            },
+            {
+              "condition": "fullsize_quad_lux",
+              "operator": "<=",
+              "value": [
+                -1,
+                0,
+                1
+              ]
+            },
+            {
+              "condition": "adrc_gain",
+              "operator": ">",
+              "value": [
+                -1,
+                -1,
+                5
+              ]
+            },
+            {
+              "condition": "is_hdr",
+              "operator": "=",
+              "value": [
+                1,
+                1,
+                1
+              ]
+            }
+          ]
+        },
+        "AlgoType_SR": {
+          "Description": "SR trigger conditions",
+          "counts": 3,
+          "CONDITIONS": [
+            {
+              "condition": "camera_mode",
+              "operator": "=",
+              "value": [
+                131072,
+                131072,
+                131072
+              ]
+            },
+            {
+              "condition": "ui_motion",
+              "operator": "=",
+              "value": [
+                0,
+                0,
+                0
+              ]
+            },
+            {
+              "condition": "sensor_type",
+              "operator": "!=",
+              "value": [
+                3,
+                3,
+                2
+              ]
+            },
+            {
+              "condition": "sensor_type",
+              "operator": "=",
+              "value": [
+                12,
+                12,
+                13
+              ]
+            },
+            {
+              "condition": "fullsize_quad_lux",
+              "operator": "<=",
+              "value": [
+                0,
+                1,
+                1
+              ]
+            },
+            {
+              "condition": "adrc_gain",
+              "operator": "<=",
+              "value": [
+                -1,
+                -1,
+                5
+              ]
+            },
+            {
+              "condition": "adrc_gain",
+              "operator": ">",
+              "value": [
+                -1,
+                5,
+                -1
+              ]
+            }
+          ]
+        },
+        "AlgoType_AINR": {
+          "Description": "AINR trigger conditions",
+          "counts": 1,
+          "CONDITIONS": null
+        }
+      }
+    }
+  },
+  "FORCE_ALGO": {
+    "REAR": {
+      "forced_algo": [
+        "AlgoType_INVALID"
+      ],
+      "AlgoType_INVALID": {
+        "Description": "force MMF conditions",
+        "counts": 1,
+        "CONDITIONS": [
+          {
+            "condition": "sensor_mode",
+            "operator": "=",
+            "value": [
+              34
+            ]
+          },
+          {
+            "condition": "smartmotion",
+            "operator": "=",
+            "value": [
+              1
+            ]
+          }
+        ]
+      },
+      "AlgoType_HDR": {
+        "Description": "force HDR conditions",
+        "counts": 3,
+        "CONDITIONS": [
+          {
+            "condition": "sensor_mode",
+            "operator": "=",
+            "value": [
+              34,
+              -1,
+              -1
+            ]
+          },
+          {
+            "condition": "camera_mode",
+            "operator": "=",
+            "value": [
+              -1,
+              1,
+              1
+            ]
+          },
+          {
+            "condition": "is_se",
+            "operator": "=",
+            "value": [
+              -1,
+              0,
+              0
+            ]
+          },
+          {
+            "condition": "is_ell",
+            "operator": "=",
+            "value": [
+              -1,
+              0,
+              0
+            ]
+          },
+          {
+            "condition": "ui_motion",
+            "operator": "=",
+            "value": [
+              -1,
+              0,
+              0
+            ]
+          },
+          {
+            "condition": "ui_hdr",
+            "operator": "=",
+            "value": [
+              -1,
+              1,
+              1
+            ]
+          },
+          {
+            "condition": "luxindex",
+            "operator": "<=",
+            "value": [
+              -1,
+              455,
+              455
+            ]
+          },
+          {
+            "condition": "uizoom",
+            "operator": "<",
+            "value": [
+              1.4,
+              1.4,
+              1.4
+            ]
+          },
+          {
+            "condition": "is_wp",
+            "operator": "=",
+            "value": [
+              -1,
+              1,
+              -1
+            ]
+          },
+          {
+            "condition": "is_bs",
+            "operator": "=",
+            "value": [
+              -1,
+              -1,
+              1
+            ]
+          },
+          {
+            "condition": "phone_motion",
+            "operator": "=",
+            "value": [
+              -1,
+              0,
+              0
+            ]
+          }
+        ]
+      },
+      "AlgoType_HDRSR": {
+        "Description": "force HDR conditions",
+        "counts": 3,
+        "CONDITIONS": [
+          {
+            "condition": "sensor_mode",
+            "operator": "=",
+            "value": [
+              34,
+              -1,
+              -1
+            ]
+          },
+          {
+            "condition": "camera_mode",
+            "operator": "=",
+            "value": [
+              -1,
+              1,
+              1
+            ]
+          },
+          {
+            "condition": "is_se",
+            "operator": "=",
+            "value": [
+              -1,
+              0,
+              0
+            ]
+          },
+          {
+            "condition": "is_ell",
+            "operator": "=",
+            "value": [
+              -1,
+              0,
+              0
+            ]
+          },
+          {
+            "condition": "ui_motion",
+            "operator": "=",
+            "value": [
+              -1,
+              0,
+              0
+            ]
+          },
+          {
+            "condition": "ui_hdr",
+            "operator": "=",
+            "value": [
+              -1,
+              1,
+              1
+            ]
+          },
+          {
+            "condition": "luxindex",
+            "operator": "<=",
+            "value": [
+              -1,
+              455,
+              455
+            ]
+          },
+          {
+            "condition": "uizoom",
+            "operator": "<=",
+            "value": [
+              20,
+              20,
+              20
+            ]
+          },
+          {
+            "condition": "uizoom",
+            "operator": ">=",
+            "value": [
+              1.4,
+              1.4,
+              1.4
+            ]
+          },
+          {
+            "condition": "is_wp",
+            "operator": "=",
+            "value": [
+              -1,
+              1,
+              -1
+            ]
+          },
+          {
+            "condition": "is_bs",
+            "operator": "=",
+            "value": [
+              -1,
+              -1,
+              1
+            ]
+          },
+          {
+            "condition": "phone_motion",
+            "operator": "=",
+            "value": [
+              -1,
+              0,
+              0
+            ]
+          }
+        ]
+      }
+    },
+    "FRONT": {
+      "forced_algo": null
+    }
+  },
+  "FALLBACK_ALGO": {
+    "REAR": {
+      "fallback_algo": [
+        "AlgoType_HDRSR",
+        "AlgoType_SR"
+      ],
+      "AlgoType_HDRSR": {
+        "Description": "fallback HDR conditions",
+        "counts": 1,
+        "CONDITIONS": [
+          {
+            "condition": "uizoom",
+            "operator": ">=",
+            "value": [
+              1.4
+            ]
+          },
+          {
+            "condition": "sensor_type",
+            "operator": "=",
+            "value": [
+              2
+            ]
+          }
+        ],
+        "fallback_index": [
+          "AlgoType_HDR"
+        ]
+      },
+      "AlgoType_SR": {
+        "Description": "fallback HDR conditions",
+        "counts": 1,
+        "CONDITIONS": [
+          {
+            "condition": "uizoom",
+            "operator": ">=",
+            "value": [
+              1.4
+            ]
+          },
+          {
+            "condition": "sensor_type",
+            "operator": "=",
+            "value": [
+              2
+            ]
+          }
+        ],
+        "fallback_index": [
+          "AlgoType_AINR"
+        ]
+      }
+    },
+    "FRONT": {
+      "fallback_algo": null
+    }
+  }
+}

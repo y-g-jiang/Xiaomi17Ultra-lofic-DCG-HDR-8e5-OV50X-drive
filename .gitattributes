@@ -1,0 +1,17 @@
+*.sh text eol=lf
+*.py text eol=lf
+*.java text eol=crlf
+*.so -text
+*.bin -text
+*.header -text
+*.apk -text
+*.raw -text
+app/assets/* -text
+tools/photo_v5/payload/*.json -text
+tools/native50_qbayer/camx.txt -text
+*.sha256 text eol=lf
+*.zip -text
+*.prop text eol=lf
+*.c text eol=lf
+.gitattributes text eol=lf
+.gitignore text eol=lf

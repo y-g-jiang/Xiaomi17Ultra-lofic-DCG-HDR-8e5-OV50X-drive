@@ -1,0 +1,4125 @@
+{
+  "Description": "Xiaomi SmartAE config file - Arbitrator",
+  "phone_code": "P1",
+  "jsonVersion": "SE-V2.0-20251217",
+  "NEW_HDR_EV_CAL": {
+    "CLASSIC": {
+      "UW": {
+        "light": [
+          15,
+          30,
+          40,
+          60
+        ],
+        "MAPPING": {
+          "using_interp": false,
+          "ev_dark_adrc_coef0": [
+            -1.35,
+            -1.35,
+            -1.35,
+            -1.45
+          ],
+          "ev_dark_adrc_coef1": [
+            -10,
+            -10,
+            -10,
+            -12
+          ],
+          "ev_bri_adrc_coef0": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "ev_bri_adrc_coef1": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "fireworks_fix_ev": false,
+          "adrc_gain_array": [
+            [
+              1.1,
+              1.25,
+              1.4,
+              1.6,
+              1.8,
+              2.0,
+              3.0
+            ],
+            [
+              1.1,
+              1.25,
+              1.4,
+              1.6,
+              1.8,
+              2.0,
+              3.0
+            ],
+            [
+              1.1,
+              1.25,
+              1.4,
+              1.6,
+              1.8,
+              2.0,
+              3.0
+            ],
+            [
+              1.1,
+              1.25,
+              1.4,
+              1.6,
+              1.8,
+              2.0,
+              3.0
+            ]
+          ],
+          "ev_dark_array": [
+            [
+              -30,
+              -32,
+              -33,
+              -34,
+              -36,
+              -39,
+              -42
+            ],
+            [
+              -30,
+              -32,
+              -33,
+              -34,
+              -36,
+              -39,
+              -42
+            ],
+            [
+              -30,
+              -32,
+              -33,
+              -34,
+              -36,
+              -39,
+              -42
+            ],
+            [
+              -30,
+              -32,
+              -33,
+              -34,
+              -36,
+              -39,
+              -42
+            ]
+          ]
+        },
+        "COMPENSATE": {
+          "overexp_th": [
+            0.95,
+            0.95,
+            0.95,
+            0.95
+          ],
+          "compen_coef": [
+            -1.1,
+            -1.1,
+            -2.0,
+            -2.4
+          ],
+          "raw_compen_w": [
+            0.4,
+            0.4,
+            0.4,
+            0.4
+          ],
+          "global_compen_w": [
+            0.3,
+            0.3,
+            0.3,
+            0.3
+          ],
+          "local_compen_w": [
+            0.3,
+            0.4,
+            0.6,
+            0.6
+          ],
+          "raw_compen_base": [
+            0.01,
+            0.01,
+            0.01,
+            0.01
+          ],
+          "global_compen_base": [
+            0.05,
+            0.05,
+            0.05,
+            0.05
+          ],
+          "local_compen_base": [
+            0.01,
+            0.01,
+            0.01,
+            0.01
+          ],
+          "compen_max": [
+            -20,
+            -20,
+            -20,
+            -25
+          ]
+        },
+        "ANTICOMPENSATE": {
+          "dark_luma_min": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "dark_valid_ratio": [
+            0.8,
+            0.8,
+            0.8,
+            0.8
+          ],
+          "anti_weight": [
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        "EV_LIMITS": {
+          "need_sky_limit": false,
+          "ev_sky_neg_min": [
+            -36,
+            -36,
+            -36,
+            -36
+          ],
+          "ev_sky_neg_max": [
+            -30,
+            -30,
+            -30,
+            -30
+          ],
+          "sky_ratio_th": [
+            0.1,
+            0.1,
+            0.1,
+            0.1
+          ],
+          "ev_neg_min": [
+            -42,
+            -42,
+            -42,
+            -42
+          ],
+          "ev_neg_max": [
+            -30,
+            -30,
+            -30,
+            -30
+          ],
+          "ev_short_min": [
+            -15,
+            -15,
+            -15,
+            -15
+          ],
+          "ev_short_max": [
+            -12,
+            -12,
+            -12,
+            -12
+          ],
+          "ev_pos_min": [
+            6,
+            6,
+            6,
+            6
+          ],
+          "ev_pos_max": [
+            30,
+            30,
+            30,
+            30
+          ],
+          "vs_offset": [
+            6,
+            6,
+            6,
+            6
+          ],
+          "need_motion_limit": true,
+          "smart_motion": [
+            -15,
+            -15,
+            -15,
+            -15
+          ]
+        },
+        "SPECIAL_SCENE": {
+          "special_scene_limit": true,
+          "CONCERT": {
+            "ratio": 1.0,
+            "offset": 0,
+            "ev_neg_min": [
+              -30,
+              -30,
+              -30,
+              -30
+            ],
+            "ev_neg_max": [
+              -12,
+              -12,
+              -12,
+              -12
+            ],
+            "ev_short_min": [
+              -21,
+              -21,
+              -21,
+              -21
+            ],
+            "ev_short_max": [
+              -6,
+              -6,
+              -6,
+              -6
+            ]
+          },
+          "FIRE": {
+            "ratio": 1.0,
+            "offset": 0,
+            "ev_neg_min": [
+              -42,
+              -42,
+              -42,
+              -42
+            ],
+            "ev_neg_max": [
+              -12,
+              -12,
+              -12,
+              -12
+            ],
+            "ev_short_min": [
+              -21,
+              -21,
+              -21,
+              -21
+            ],
+            "ev_short_max": [
+              -6,
+              -6,
+              -6,
+              -6
+            ]
+          },
+          "FIREWORKS": {
+            "ratio": 0.8,
+            "offset": 0,
+            "ev_neg_min": [
+              -42,
+              -42,
+              -42,
+              -42
+            ],
+            "ev_neg_max": [
+              -12,
+              -12,
+              -12,
+              -12
+            ],
+            "ev_short_min": [
+              -21,
+              -21,
+              -21,
+              -21
+            ],
+            "ev_short_max": [
+              -6,
+              -6,
+              -6,
+              -6
+            ]
+          }
+        },
+        "PROGRAM_EV": {
+          "VS_EV": {
+            "Description": "vs_ev",
+            "counts": 0,
+            "ev_adjust": null,
+            "CONDITIONS": null
+          },
+          "SHORT_EV": {
+            "Description": "short_ev",
+            "counts": 0,
+            "ev_adjust": null,
+            "CONDITIONS": null
+          },
+          "BRIGHT_EV": {
+            "Description": "bright_ev",
+            "counts": 0,
+            "ev_adjust": null,
+            "CONDITIONS": null
+          }
+        }
+      },
+      "WIDE": {
+        "light": [
+          15,
+          30,
+          40,
+          60
+        ],
+        "MAPPING": {
+          "using_interp": false,
+          "ev_dark_adrc_coef0": [
+            -1.35,
+            -1.35,
+            -1.35,
+            -1.45
+          ],
+          "ev_dark_adrc_coef1": [
+            -10,
+            -10,
+            -10,
+            -12
+          ],
+          "ev_bri_adrc_coef0": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "ev_bri_adrc_coef1": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "fireworks_fix_ev": false,
+          "adrc_gain_array": [
+            [
+              1.1,
+              1.25,
+              1.4,
+              1.6,
+              1.8,
+              2.0,
+              3.0
+            ],
+            [
+              1.1,
+              1.25,
+              1.4,
+              1.6,
+              1.8,
+              2.0,
+              3.0
+            ],
+            [
+              1.1,
+              1.25,
+              1.4,
+              1.6,
+              1.8,
+              2.0,
+              3.0
+            ],
+            [
+              1.1,
+              1.25,
+              1.4,
+              1.6,
+              1.8,
+              2.0,
+              3.0
+            ]
+          ],
+          "ev_dark_array": [
+            [
+              -30,
+              -32,
+              -33,
+              -34,
+              -36,
+              -39,
+              -42
+            ],
+            [
+              -30,
+              -32,
+              -33,
+              -34,
+              -36,
+              -39,
+              -42
+            ],
+            [
+              -30,
+              -32,
+              -33,
+              -34,
+              -36,
+              -39,
+              -42
+            ],
+            [
+              -30,
+              -32,
+              -33,
+              -34,
+              -36,
+              -39,
+              -42
+            ]
+          ]
+        },
+        "COMPENSATE": {
+          "overexp_th": [
+            0.95,
+            0.95,
+            0.95,
+            0.95
+          ],
+          "compen_coef": [
+            -1.1,
+            -1.1,
+            -2.0,
+            -2.4
+          ],
+          "raw_compen_w": [
+            0.4,
+            0.4,
+            0.4,
+            0.4
+          ],
+          "global_compen_w": [
+            0.3,
+            0.3,
+            0.3,
+            0.3
+          ],
+          "local_compen_w": [
+            0.3,
+            0.4,
+            0.6,
+            0.6
+          ],
+          "raw_compen_base": [
+            0.01,
+            0.01,
+            0.01,
+            0.01
+          ],
+          "global_compen_base": [
+            0.05,
+            0.05,
+            0.05,
+            0.05
+          ],
+          "local_compen_base": [
+            0.01,
+            0.01,
+            0.01,
+            0.01
+          ],
+          "compen_max": [
+            -20,
+            -20,
+            -20,
+            -25
+          ]
+        },
+        "ANTICOMPENSATE": {
+          "dark_luma_min": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "dark_valid_ratio": [
+            0.8,
+            0.8,
+            0.8,
+            0.8
+          ],
+          "anti_weight": [
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        "EV_LIMITS": {
+          "need_sky_limit": false,
+          "ev_sky_neg_min": [
+            -36,
+            -36,
+            -36,
+            -36
+          ],
+          "ev_sky_neg_max": [
+            -30,
+            -30,
+            -30,
+            -30
+          ],
+          "sky_ratio_th": [
+            0.1,
+            0.1,
+            0.1,
+            0.1
+          ],
+          "ev_neg_min": [
+            -42,
+            -42,
+            -42,
+            -42
+          ],
+          "ev_neg_max": [
+            -30,
+            -30,
+            -30,
+            -30
+          ],
+          "ev_short_min": [
+            -15,
+            -15,
+            -15,
+            -15
+          ],
+          "ev_short_max": [
+            -12,
+            -12,
+            -12,
+            -12
+          ],
+          "ev_pos_min": [
+            6,
+            6,
+            6,
+            6
+          ],
+          "ev_pos_max": [
+            30,
+            30,
+            30,
+            30
+          ],
+          "vs_offset": [
+            6,
+            6,
+            6,
+            6
+          ]
+        },
+        "SPECIAL_SCENE": {
+          "special_scene_limit": true,
+          "CONCERT": {
+            "ratio": 1.0,
+            "offset": 0,
+            "ev_neg_min": [
+              -30,
+              -30,
+              -30,
+              -30
+            ],
+            "ev_neg_max": [
+              -12,
+              -12,
+              -12,
+              -12
+            ],
+            "ev_short_min": [
+              -21,
+              -21,
+              -21,
+              -21
+            ],
+            "ev_short_max": [
+              -6,
+              -6,
+              -6,
+              -6
+            ]
+          },
+          "FIRE": {
+            "ratio": 1.0,
+            "offset": 0,
+            "ev_neg_min": [
+              -42,
+              -42,
+              -42,
+              -42
+            ],
+            "ev_neg_max": [
+              -12,
+              -12,
+              -12,
+              -12
+            ],
+            "ev_short_min": [
+              -21,
+              -21,
+              -21,
+              -21
+            ],
+            "ev_short_max": [
+              -6,
+              -6,
+              -6,
+              -6
+            ]
+          },
+          "FIREWORKS": {
+            "ratio": 0.8,
+            "offset": 0,
+            "ev_neg_min": [
+              -42,
+              -42,
+              -42,
+              -42
+            ],
+            "ev_neg_max": [
+              -12,
+              -12,
+              -12,
+              -12
+            ],
+            "ev_short_min": [
+              -21,
+              -21,
+              -21,
+              -21
+            ],
+            "ev_short_max": [
+              -6,
+              -6,
+              -6,
+              -6
+            ]
+          }
+        },
+        "PROGRAM_EV": {
+          "VS_EV": {
+            "Description": "vs_ev",
+            "counts": 0,
+            "ev_adjust": null,
+            "CONDITIONS": null
+          },
+          "SHORT_EV": {
+            "Description": "short_ev",
+            "counts": 0,
+            "ev_adjust": null,
+            "CONDITIONS": null
+          },
+          "BRIGHT_EV": {
+            "Description": "bright_ev",
+            "counts": 0,
+            "ev_adjust": null,
+            "CONDITIONS": null
+          }
+        }
+      },
+      "TELE": {
+        "light": [
+          15,
+          30,
+          40,
+          60
+        ],
+        "MAPPING": {
+          "using_interp": false,
+          "ev_dark_adrc_coef0": [
+            -1.35,
+            -1.35,
+            -1.35,
+            -1.4
+          ],
+          "ev_dark_adrc_coef1": [
+            -10,
+            -10,
+            -6,
+            -8
+          ],
+          "ev_bri_adrc_coef0": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "ev_bri_adrc_coef1": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "fireworks_fix_ev": false,
+          "adrc_gain_array": [
+            [
+              1.1,
+              1.25,
+              1.4,
+              1.6,
+              1.8,
+              2.0,
+              3.0
+            ],
+            [
+              1.1,
+              1.25,
+              1.4,
+              1.6,
+              1.8,
+              2.0,
+              3.0
+            ],
+            [
+              1.1,
+              1.25,
+              1.4,
+              1.6,
+              1.8,
+              2.0,
+              3.0
+            ],
+            [
+              1.1,
+              1.25,
+              1.4,
+              1.6,
+              1.8,
+              2.0,
+              3.0
+            ]
+          ],
+          "ev_dark_array": [
+            [
+              -30,
+              -32,
+              -33,
+              -34,
+              -36,
+              -39,
+              -42
+            ],
+            [
+              -30,
+              -32,
+              -33,
+              -34,
+              -36,
+              -39,
+              -42
+            ],
+            [
+              -30,
+              -32,
+              -33,
+              -34,
+              -36,
+              -39,
+              -42
+            ],
+            [
+              -30,
+              -32,
+              -33,
+              -34,
+              -36,
+              -39,
+              -42
+            ]
+          ]
+        },
+        "COMPENSATE": {
+          "overexp_th": [
+            0.95,
+            0.95,
+            0.95,
+            0.95
+          ],
+          "compen_coef": [
+            -1.1,
+            -1.1,
+            -1,
+            -1
+          ],
+          "raw_compen_w": [
+            0.4,
+            0.4,
+            0.4,
+            0.4
+          ],
+          "global_compen_w": [
+            0.3,
+            0.3,
+            0.3,
+            0.3
+          ],
+          "local_compen_w": [
+            0.3,
+            0.4,
+            0.6,
+            0.6
+          ],
+          "raw_compen_base": [
+            0.01,
+            0.01,
+            0.01,
+            0.01
+          ],
+          "global_compen_base": [
+            0.05,
+            0.05,
+            0.05,
+            0.05
+          ],
+          "local_compen_base": [
+            0.01,
+            0.01,
+            0.01,
+            0.01
+          ],
+          "compen_max": [
+            -20,
+            -20,
+            -20,
+            -20
+          ]
+        },
+        "ANTICOMPENSATE": {
+          "dark_luma_min": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "dark_valid_ratio": [
+            0.8,
+            0.8,
+            0.8,
+            0.8
+          ],
+          "anti_weight": [
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        "EV_LIMITS": {
+          "need_sky_limit": false,
+          "ev_sky_neg_min": [
+            -36,
+            -36,
+            -36,
+            -36
+          ],
+          "ev_sky_neg_max": [
+            -30,
+            -30,
+            -30,
+            -30
+          ],
+          "sky_ratio_th": [
+            0.1,
+            0.1,
+            0.1,
+            0.1
+          ],
+          "ev_neg_min": [
+            -42,
+            -42,
+            -42,
+            -42
+          ],
+          "ev_neg_max": [
+            -30,
+            -30,
+            -30,
+            -30
+          ],
+          "ev_short_min": [
+            -15,
+            -15,
+            -15,
+            -15
+          ],
+          "ev_short_max": [
+            -12,
+            -12,
+            -12,
+            -12
+          ],
+          "ev_pos_min": [
+            6,
+            6,
+            6,
+            6
+          ],
+          "ev_pos_max": [
+            30,
+            30,
+            30,
+            30
+          ],
+          "vs_offset": [
+            6,
+            6,
+            6,
+            6
+          ]
+        },
+        "SPECIAL_SCENE": {
+          "special_scene_limit": true,
+          "CONCERT": {
+            "ratio": 1.0,
+            "offset": 0,
+            "ev_neg_min": [
+              -30,
+              -30,
+              -30,
+              -30
+            ],
+            "ev_neg_max": [
+              -12,
+              -12,
+              -12,
+              -12
+            ],
+            "ev_short_min": [
+              -21,
+              -21,
+              -21,
+              -21
+            ],
+            "ev_short_max": [
+              -6,
+              -6,
+              -6,
+              -6
+            ]
+          },
+          "FIRE": {
+            "ratio": 1.0,
+            "offset": 0,
+            "ev_neg_min": [
+              -42,
+              -42,
+              -42,
+              -42
+            ],
+            "ev_neg_max": [
+              -12,
+              -12,
+              -12,
+              -12
+            ],
+            "ev_short_min": [
+              -21,
+              -21,
+              -21,
+              -21
+            ],
+            "ev_short_max": [
+              -6,
+              -6,
+              -6,
+              -6
+            ]
+          },
+          "FIREWORKS": {
+            "ratio": 0.8,
+            "offset": 0,
+            "ev_neg_min": [
+              -42,
+              -42,
+              -42,
+              -42
+            ],
+            "ev_neg_max": [
+              -12,
+              -12,
+              -12,
+              -12
+            ],
+            "ev_short_min": [
+              -21,
+              -21,
+              -21,
+              -21
+            ],
+            "ev_short_max": [
+              -6,
+              -6,
+              -6,
+              -6
+            ]
+          }
+        },
+        "PROGRAM_EV": {
+          "VS_EV": {
+            "Description": "vs_ev",
+            "counts": 0,
+            "ev_adjust": null,
+            "CONDITIONS": null
+          },
+          "SHORT_EV": {
+            "Description": "short_ev",
+            "counts": 0,
+            "ev_adjust": null,
+            "CONDITIONS": null
+          },
+          "BRIGHT_EV": {
+            "Description": "bright_ev",
+            "counts": 0,
+            "ev_adjust": null,
+            "CONDITIONS": null
+          }
+        }
+      }
+    },
+    "VIBRANT": {
+      "UW": {
+        "light": [
+          15,
+          30,
+          40,
+          60
+        ],
+        "MAPPING": {
+          "using_interp": false,
+          "ev_dark_adrc_coef0": [
+            -1.35,
+            -1.35,
+            -1.35,
+            -1.45
+          ],
+          "ev_dark_adrc_coef1": [
+            -10,
+            -10,
+            -10,
+            -12
+          ],
+          "ev_bri_adrc_coef0": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "ev_bri_adrc_coef1": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "fireworks_fix_ev": false,
+          "adrc_gain_array": [
+            [
+              1.1,
+              1.25,
+              1.4,
+              1.6,
+              1.8,
+              2.0,
+              3.0
+            ],
+            [
+              1.1,
+              1.25,
+              1.4,
+              1.6,
+              1.8,
+              2.0,
+              3.0
+            ],
+            [
+              1.1,
+              1.25,
+              1.4,
+              1.6,
+              1.8,
+              2.0,
+              3.0
+            ],
+            [
+              1.1,
+              1.25,
+              1.4,
+              1.6,
+              1.8,
+              2.0,
+              3.0
+            ]
+          ],
+          "ev_dark_array": [
+            [
+              -30,
+              -32,
+              -33,
+              -34,
+              -36,
+              -39,
+              -42
+            ],
+            [
+              -30,
+              -32,
+              -33,
+              -34,
+              -36,
+              -39,
+              -42
+            ],
+            [
+              -30,
+              -32,
+              -33,
+              -34,
+              -36,
+              -39,
+              -42
+            ],
+            [
+              -30,
+              -32,
+              -33,
+              -34,
+              -36,
+              -39,
+              -42
+            ]
+          ]
+        },
+        "COMPENSATE": {
+          "overexp_th": [
+            0.95,
+            0.95,
+            0.95,
+            0.95
+          ],
+          "compen_coef": [
+            -1.1,
+            -1.1,
+            -2.0,
+            -2.4
+          ],
+          "raw_compen_w": [
+            0.4,
+            0.4,
+            0.4,
+            0.4
+          ],
+          "global_compen_w": [
+            0.3,
+            0.3,
+            0.3,
+            0.3
+          ],
+          "local_compen_w": [
+            0.3,
+            0.4,
+            0.6,
+            0.6
+          ],
+          "raw_compen_base": [
+            0.01,
+            0.01,
+            0.01,
+            0.01
+          ],
+          "global_compen_base": [
+            0.05,
+            0.05,
+            0.05,
+            0.05
+          ],
+          "local_compen_base": [
+            0.01,
+            0.01,
+            0.01,
+            0.01
+          ],
+          "compen_max": [
+            -20,
+            -20,
+            -20,
+            -25
+          ]
+        },
+        "ANTICOMPENSATE": {
+          "dark_luma_min": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "dark_valid_ratio": [
+            0.8,
+            0.8,
+            0.8,
+            0.8
+          ],
+          "anti_weight": [
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        "EV_LIMITS": {
+          "need_sky_limit": false,
+          "ev_sky_neg_min": [
+            -36,
+            -36,
+            -36,
+            -36
+          ],
+          "ev_sky_neg_max": [
+            -30,
+            -30,
+            -30,
+            -30
+          ],
+          "sky_ratio_th": [
+            0.1,
+            0.1,
+            0.1,
+            0.1
+          ],
+          "ev_neg_min": [
+            -45,
+            -45,
+            -45,
+            -45
+          ],
+          "ev_neg_max": [
+            -30,
+            -30,
+            -33,
+            -36
+          ],
+          "ev_short_min": [
+            -15,
+            -15,
+            -15,
+            -15
+          ],
+          "ev_short_max": [
+            -12,
+            -12,
+            -12,
+            -12
+          ],
+          "ev_pos_min": [
+            6,
+            6,
+            6,
+            6
+          ],
+          "ev_pos_max": [
+            30,
+            30,
+            30,
+            30
+          ],
+          "vs_offset": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "need_motion_limit": true,
+          "smart_motion": [
+            -15,
+            -15,
+            -15,
+            -15
+          ]
+        },
+        "SPECIAL_SCENE": {
+          "special_scene_limit": true,
+          "CONCERT": {
+            "ratio": 1.0,
+            "offset": 0,
+            "ev_neg_min": [
+              -30,
+              -30,
+              -30,
+              -30
+            ],
+            "ev_neg_max": [
+              -12,
+              -12,
+              -12,
+              -12
+            ],
+            "ev_short_min": [
+              -21,
+              -21,
+              -21,
+              -21
+            ],
+            "ev_short_max": [
+              -6,
+              -6,
+              -6,
+              -6
+            ]
+          },
+          "FIRE": {
+            "ratio": 1.0,
+            "offset": 0,
+            "ev_neg_min": [
+              -42,
+              -42,
+              -42,
+              -42
+            ],
+            "ev_neg_max": [
+              -12,
+              -12,
+              -12,
+              -12
+            ],
+            "ev_short_min": [
+              -21,
+              -21,
+              -21,
+              -21
+            ],
+            "ev_short_max": [
+              -6,
+              -6,
+              -6,
+              -6
+            ]
+          },
+          "FIREWORKS": {
+            "ratio": 0.8,
+            "offset": 0,
+            "ev_neg_min": [
+              -42,
+              -42,
+              -42,
+              -42
+            ],
+            "ev_neg_max": [
+              -12,
+              -12,
+              -12,
+              -12
+            ],
+            "ev_short_min": [
+              -21,
+              -21,
+              -21,
+              -21
+            ],
+            "ev_short_max": [
+              -6,
+              -6,
+              -6,
+              -6
+            ]
+          }
+        },
+        "PROGRAM_EV": {
+          "VS_EV": {
+            "Description": "vs_ev",
+            "counts": 0,
+            "ev_adjust": null,
+            "CONDITIONS": null
+          },
+          "SHORT_EV": {
+            "Description": "short_ev",
+            "counts": 0,
+            "ev_adjust": null,
+            "CONDITIONS": null
+          },
+          "BRIGHT_EV": {
+            "Description": "bright_ev",
+            "counts": 0,
+            "ev_adjust": null,
+            "CONDITIONS": null
+          }
+        }
+      },
+      "WIDE": {
+        "light": [
+          15,
+          30,
+          40,
+          60
+        ],
+        "MAPPING": {
+          "using_interp": false,
+          "ev_dark_adrc_coef0": [
+            -1.35,
+            -1.35,
+            -1.35,
+            -1.45
+          ],
+          "ev_dark_adrc_coef1": [
+            -10,
+            -10,
+            -10,
+            -12
+          ],
+          "ev_bri_adrc_coef0": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "ev_bri_adrc_coef1": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "fireworks_fix_ev": false,
+          "adrc_gain_array": [
+            [
+              1.1,
+              1.25,
+              1.4,
+              1.6,
+              1.8,
+              2.0,
+              3.0
+            ],
+            [
+              1.1,
+              1.25,
+              1.4,
+              1.6,
+              1.8,
+              2.0,
+              3.0
+            ],
+            [
+              1.1,
+              1.25,
+              1.4,
+              1.6,
+              1.8,
+              2.0,
+              3.0
+            ],
+            [
+              1.1,
+              1.25,
+              1.4,
+              1.6,
+              1.8,
+              2.0,
+              3.0
+            ]
+          ],
+          "ev_dark_array": [
+            [
+              -30,
+              -32,
+              -33,
+              -34,
+              -36,
+              -39,
+              -42
+            ],
+            [
+              -30,
+              -32,
+              -33,
+              -34,
+              -36,
+              -39,
+              -42
+            ],
+            [
+              -30,
+              -32,
+              -33,
+              -34,
+              -36,
+              -39,
+              -42
+            ],
+            [
+              -30,
+              -32,
+              -33,
+              -34,
+              -36,
+              -39,
+              -42
+            ]
+          ]
+        },
+        "COMPENSATE": {
+          "overexp_th": [
+            0.95,
+            0.95,
+            0.95,
+            0.95
+          ],
+          "compen_coef": [
+            -1.1,
+            -1.1,
+            -2.0,
+            -2.4
+          ],
+          "raw_compen_w": [
+            0.4,
+            0.4,
+            0.4,
+            0.4
+          ],
+          "global_compen_w": [
+            0.3,
+            0.3,
+            0.3,
+            0.3
+          ],
+          "local_compen_w": [
+            0.3,
+            0.4,
+            0.6,
+            0.6
+          ],
+          "raw_compen_base": [
+            0.01,
+            0.01,
+            0.01,
+            0.01
+          ],
+          "global_compen_base": [
+            0.05,
+            0.05,
+            0.05,
+            0.05
+          ],
+          "local_compen_base": [
+            0.01,
+            0.01,
+            0.01,
+            0.01
+          ],
+          "compen_max": [
+            -20,
+            -20,
+            -20,
+            -25
+          ]
+        },
+        "ANTICOMPENSATE": {
+          "dark_luma_min": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "dark_valid_ratio": [
+            0.8,
+            0.8,
+            0.8,
+            0.8
+          ],
+          "anti_weight": [
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        "EV_LIMITS": {
+          "need_sky_limit": false,
+          "ev_sky_neg_min": [
+            -36,
+            -36,
+            -36,
+            -36
+          ],
+          "ev_sky_neg_max": [
+            -30,
+            -30,
+            -30,
+            -30
+          ],
+          "sky_ratio_th": [
+            0.1,
+            0.1,
+            0.1,
+            0.1
+          ],
+          "ev_neg_min": [
+            -42,
+            -42,
+            -42,
+            -42
+          ],
+          "ev_neg_max": [
+            -30,
+            -30,
+            -30,
+            -30
+          ],
+          "ev_short_min": [
+            -15,
+            -15,
+            -15,
+            -15
+          ],
+          "ev_short_max": [
+            -12,
+            -12,
+            -12,
+            -12
+          ],
+          "ev_pos_min": [
+            6,
+            6,
+            6,
+            6
+          ],
+          "ev_pos_max": [
+            30,
+            30,
+            30,
+            30
+          ],
+          "vs_offset": [
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        "SPECIAL_SCENE": {
+          "special_scene_limit": true,
+          "CONCERT": {
+            "ratio": 1.0,
+            "offset": 0,
+            "ev_neg_min": [
+              -30,
+              -30,
+              -30,
+              -30
+            ],
+            "ev_neg_max": [
+              -12,
+              -12,
+              -12,
+              -12
+            ],
+            "ev_short_min": [
+              -21,
+              -21,
+              -21,
+              -21
+            ],
+            "ev_short_max": [
+              -6,
+              -6,
+              -6,
+              -6
+            ]
+          },
+          "FIRE": {
+            "ratio": 1.0,
+            "offset": 0,
+            "ev_neg_min": [
+              -42,
+              -42,
+              -42,
+              -42
+            ],
+            "ev_neg_max": [
+              -12,
+              -12,
+              -12,
+              -12
+            ],
+            "ev_short_min": [
+              -21,
+              -21,
+              -21,
+              -21
+            ],
+            "ev_short_max": [
+              -6,
+              -6,
+              -6,
+              -6
+            ]
+          },
+          "FIREWORKS": {
+            "ratio": 0.8,
+            "offset": 0,
+            "ev_neg_min": [
+              -42,
+              -42,
+              -42,
+              -42
+            ],
+            "ev_neg_max": [
+              -12,
+              -12,
+              -12,
+              -12
+            ],
+            "ev_short_min": [
+              -21,
+              -21,
+              -21,
+              -21
+            ],
+            "ev_short_max": [
+              -6,
+              -6,
+              -6,
+              -6
+            ]
+          }
+        },
+        "PROGRAM_EV": {
+          "VS_EV": {
+            "Description": "vs_ev",
+            "counts": 0,
+            "ev_adjust": null,
+            "CONDITIONS": null
+          },
+          "SHORT_EV": {
+            "Description": "short_ev",
+            "counts": 0,
+            "ev_adjust": null,
+            "CONDITIONS": null
+          },
+          "BRIGHT_EV": {
+            "Description": "bright_ev",
+            "counts": 0,
+            "ev_adjust": null,
+            "CONDITIONS": null
+          }
+        }
+      },
+      "TELE": {
+        "light": [
+          15,
+          30,
+          40,
+          60
+        ],
+        "MAPPING": {
+          "using_interp": false,
+          "ev_dark_adrc_coef0": [
+            -1.35,
+            -1.35,
+            -1.35,
+            -1.4
+          ],
+          "ev_dark_adrc_coef1": [
+            -10,
+            -10,
+            -12,
+            -14
+          ],
+          "ev_bri_adrc_coef0": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "ev_bri_adrc_coef1": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "fireworks_fix_ev": false,
+          "adrc_gain_array": [
+            [
+              1.1,
+              1.25,
+              1.4,
+              1.6,
+              1.8,
+              2.0,
+              3.0
+            ],
+            [
+              1.1,
+              1.25,
+              1.4,
+              1.6,
+              1.8,
+              2.0,
+              3.0
+            ],
+            [
+              1.1,
+              1.25,
+              1.4,
+              1.6,
+              1.8,
+              2.0,
+              3.0
+            ],
+            [
+              1.1,
+              1.25,
+              1.4,
+              1.6,
+              1.8,
+              2.0,
+              3.0
+            ]
+          ],
+          "ev_dark_array": [
+            [
+              -30,
+              -32,
+              -33,
+              -34,
+              -36,
+              -39,
+              -42
+            ],
+            [
+              -30,
+              -32,
+              -33,
+              -34,
+              -36,
+              -39,
+              -42
+            ],
+            [
+              -30,
+              -32,
+              -33,
+              -34,
+              -36,
+              -39,
+              -42
+            ],
+            [
+              -30,
+              -32,
+              -33,
+              -34,
+              -36,
+              -39,
+              -42
+            ]
+          ]
+        },
+        "COMPENSATE": {
+          "overexp_th": [
+            0.95,
+            0.95,
+            0.95,
+            0.95
+          ],
+          "compen_coef": [
+            -1.1,
+            -1.1,
+            -1,
+            -1
+          ],
+          "raw_compen_w": [
+            0.4,
+            0.4,
+            0.4,
+            0.4
+          ],
+          "global_compen_w": [
+            0.3,
+            0.3,
+            0.3,
+            0.3
+          ],
+          "local_compen_w": [
+            0.3,
+            0.4,
+            0.6,
+            0.6
+          ],
+          "raw_compen_base": [
+            0.01,
+            0.01,
+            0.01,
+            0.01
+          ],
+          "global_compen_base": [
+            0.05,
+            0.05,
+            0.05,
+            0.05
+          ],
+          "local_compen_base": [
+            0.01,
+            0.01,
+            0.01,
+            0.01
+          ],
+          "compen_max": [
+            -20,
+            -20,
+            -20,
+            -20
+          ]
+        },
+        "ANTICOMPENSATE": {
+          "dark_luma_min": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "dark_valid_ratio": [
+            0.8,
+            0.8,
+            0.8,
+            0.8
+          ],
+          "anti_weight": [
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        "EV_LIMITS": {
+          "need_sky_limit": false,
+          "ev_sky_neg_min": [
+            -36,
+            -36,
+            -36,
+            -36
+          ],
+          "ev_sky_neg_max": [
+            -30,
+            -30,
+            -30,
+            -30
+          ],
+          "sky_ratio_th": [
+            0.1,
+            0.1,
+            0.1,
+            0.1
+          ],
+          "ev_neg_min": [
+            -45,
+            -45,
+            -45,
+            -45
+          ],
+          "ev_neg_max": [
+            -30,
+            -30,
+            -30,
+            -30
+          ],
+          "ev_short_min": [
+            -15,
+            -15,
+            -15,
+            -15
+          ],
+          "ev_short_max": [
+            -12,
+            -12,
+            -12,
+            -12
+          ],
+          "ev_pos_min": [
+            6,
+            6,
+            6,
+            6
+          ],
+          "ev_pos_max": [
+            30,
+            30,
+            30,
+            30
+          ],
+          "vs_offset": [
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        "SPECIAL_SCENE": {
+          "special_scene_limit": true,
+          "CONCERT": {
+            "ratio": 1.0,
+            "offset": 0,
+            "ev_neg_min": [
+              -30,
+              -30,
+              -30,
+              -30
+            ],
+            "ev_neg_max": [
+              -12,
+              -12,
+              -12,
+              -12
+            ],
+            "ev_short_min": [
+              -21,
+              -21,
+              -21,
+              -21
+            ],
+            "ev_short_max": [
+              -6,
+              -6,
+              -6,
+              -6
+            ]
+          },
+          "FIRE": {
+            "ratio": 1.0,
+            "offset": 0,
+            "ev_neg_min": [
+              -42,
+              -42,
+              -42,
+              -42
+            ],
+            "ev_neg_max": [
+              -12,
+              -12,
+              -12,
+              -12
+            ],
+            "ev_short_min": [
+              -21,
+              -21,
+              -21,
+              -21
+            ],
+            "ev_short_max": [
+              -6,
+              -6,
+              -6,
+              -6
+            ]
+          },
+          "FIREWORKS": {
+            "ratio": 0.8,
+            "offset": 0,
+            "ev_neg_min": [
+              -42,
+              -42,
+              -42,
+              -42
+            ],
+            "ev_neg_max": [
+              -12,
+              -12,
+              -12,
+              -12
+            ],
+            "ev_short_min": [
+              -21,
+              -21,
+              -21,
+              -21
+            ],
+            "ev_short_max": [
+              -6,
+              -6,
+              -6,
+              -6
+            ]
+          }
+        },
+        "PROGRAM_EV": {
+          "VS_EV": {
+            "Description": "vs_ev",
+            "counts": 0,
+            "ev_adjust": null,
+            "CONDITIONS": null
+          },
+          "SHORT_EV": {
+            "Description": "short_ev",
+            "counts": 0,
+            "ev_adjust": null,
+            "CONDITIONS": null
+          },
+          "BRIGHT_EV": {
+            "Description": "bright_ev",
+            "counts": 0,
+            "ev_adjust": null,
+            "CONDITIONS": null
+          }
+        }
+      }
+    }
+  },
+  "AlgoType_SE": {
+    "CHECKER": {
+      "UW": {
+        "Description": "EV list",
+        "counts": 5,
+        "ev_index": [
+          3,
+          0,
+          3,
+          2,
+          2
+        ],
+        "CONDITIONS": [
+          {
+            "condition": "camera_mode",
+            "operator": "=",
+            "value": [
+              1,
+              1,
+              1,
+              1,
+              16400
+            ]
+          },
+          {
+            "condition": "sensor_mode",
+            "operator": "=",
+            "value": [
+              -1,
+              -1,
+              -1,
+              -1,
+              1
+            ]
+          },
+          {
+            "condition": "ai_info",
+            "operator": "=",
+            "value": [
+              983040,
+              983040,
+              512,
+              -1,
+              -1
+            ]
+          },
+          {
+            "condition": "ai_info",
+            "operator": "!=",
+            "value": [
+              -1,
+              -1,
+              983040,
+              983040,
+              -1
+            ]
+          },
+          {
+            "condition": "hd_scene",
+            "operator": "=",
+            "value": [
+              1,
+              0,
+              -1,
+              -1,
+              -1
+            ]
+          }
+        ]
+      },
+      "WIDE": {
+        "Description": "EV list",
+        "counts": 34,
+        "ev_index": [
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5
+        ],
+        "CONDITIONS": [
+          {
+            "condition": "camera_mode",
+            "operator": "=",
+            "value": [
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              2,
+              2,
+              2,
+              16,
+              16,
+              16,
+              16384,
+              16384
+            ]
+          },
+          {
+            "condition": "sensor_mode",
+            "operator": "=",
+            "value": [
+              1,
+              4,
+              131072,
+              32768,
+              1,
+              4,
+              131072,
+              32768,
+              1,
+              4,
+              131072,
+              32768,
+              1,
+              4,
+              131072,
+              131077,
+              131077,
+              1,
+              4,
+              131072,
+              131077,
+              32773,
+              32768,
+              1,
+              4,
+              32773,
+              1,
+              1,
+              32768,
+              1,
+              4,
+              5,
+              1,
+              1
+            ]
+          },
+          {
+            "condition": "ai_info",
+            "operator": "=",
+            "value": [
+              512,
+              512,
+              512,
+              512,
+              983040,
+              983040,
+              983040,
+              983040,
+              983040,
+              983040,
+              983040,
+              983040,
+              -1,
+              -1,
+              -1,
+              -1,
+              -1,
+              -1,
+              -1,
+              -1,
+              -1,
+              -1,
+              -1,
+              -1,
+              -1,
+              -1,
+              -1,
+              -1,
+              -1,
+              -1,
+              -1,
+              -1,
+              -1,
+              -1
+            ]
+          },
+          {
+            "condition": "ai_info",
+            "operator": "!=",
+            "value": [
+              983040,
+              983040,
+              983040,
+              983040,
+              -1,
+              -1,
+              -1,
+              -1,
+              -1,
+              -1,
+              -1,
+              -1,
+              983040,
+              983040,
+              983040,
+              983040,
+              983040,
+              983040,
+              983040,
+              983040,
+              983040,
+              983040,
+              983040,
+              983040,
+              983040,
+              983040,
+              -1,
+              -1,
+              -1,
+              -1,
+              -1,
+              -1,
+              -1,
+              -1
+            ]
+          },
+          {
+            "condition": "hd_scene",
+            "operator": "=",
+            "value": [
+              -1,
+              -1,
+              -1,
+              -1,
+              1,
+              1,
+              1,
+              1,
+              0,
+              0,
+              0,
+              0,
+              -1,
+              -1,
+              -1,
+              -1,
+              -1,
+              -1,
+              -1,
+              -1,
+              -1,
+              -1,
+              -1,
+              -1,
+              -1,
+              -1,
+              -1,
+              -1,
+              -1,
+              -1,
+              -1,
+              -1,
+              -1,
+              -1
+            ]
+          },
+          {
+            "condition": "luxindex",
+            "operator": "<=",
+            "value": [
+              -1,
+              -1,
+              -1,
+              -1,
+              -1,
+              -1,
+              -1,
+              -1,
+              -1,
+              -1,
+              -1,
+              -1,
+              510,
+              510,
+              510,
+              -1,
+              480,
+              510,
+              510,
+              510,
+              -1,
+              480,
+              510,
+              510,
+              510,
+              -1,
+              510,
+              -1,
+              -1,
+              510,
+              510,
+              -1,
+              510,
+              -1
+            ]
+          },
+          {
+            "condition": "luxindex",
+            "operator": ">",
+            "value": [
+              -1,
+              -1,
+              -1,
+              -1,
+              -1,
+              -1,
+              -1,
+              -1,
+              -1,
+              -1,
+              -1,
+              -1,
+              -1,
+              -1,
+              -1,
+              510,
+              -1,
+              480,
+              480,
+              480,
+              510,
+              -1,
+              480,
+              480,
+              480,
+              510,
+              -1,
+              510,
+              -1,
+              -1,
+              -1,
+              510,
+              -1,
+              510
+            ]
+          },
+          {
+            "condition": "uizoom",
+            "operator": "<",
+            "value": [
+              -1,
+              -1,
+              -1,
+              -1,
+              -1,
+              -1,
+              -1,
+              -1,
+              -1,
+              -1,
+              -1,
+              -1,
+              1.5,
+              1.5,
+              1.5,
+              1.5,
+              2,
+              2,
+              2,
+              2,
+              2,
+              -1,
+              -1,
+              -1,
+              -1,
+              -1,
+              -1,
+              -1,
+              -1,
+              -1,
+              -1,
+              -1,
+              -1,
+              -1
+            ]
+          },
+          {
+            "condition": "uizoom",
+            "operator": ">=",
+            "value": [
+              -1,
+              -1,
+              -1,
+              -1,
+              -1,
+              -1,
+              -1,
+              2,
+              -1,
+              -1,
+              -1,
+              2,
+              -1,
+              -1,
+              -1,
+              -1,
+              1.5,
+              1.5,
+              1.5,
+              1.5,
+              1.5,
+              2,
+              2,
+              2,
+              2,
+              2,
+              -1,
+              -1,
+              -1,
+              -1,
+              -1,
+              -1,
+              -1,
+              -1
+            ]
+          }
+        ]
+      },
+      "TELE": {
+        "Description": "EV list",
+        "counts": 29,
+        "ev_index": [
+          11,
+          4,
+          10,
+          11,
+          4,
+          10,
+          14,
+          0,
+          1,
+          9,
+          12,
+          4,
+          13,
+          7,
+          16,
+          4,
+          13,
+          15,
+          16,
+          4,
+          15,
+          13,
+          12,
+          12,
+          13,
+          4,
+          13,
+          12,
+          13
+        ],
+        "CONDITIONS": [
+          {
+            "condition": "camera_mode",
+            "operator": "=",
+            "value": [
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              2,
+              2,
+              16,
+              16,
+              16,
+              147456,
+              147456
+            ]
+          },
+          {
+            "condition": "sensor_mode",
+            "operator": "=",
+            "value": [
+              1,
+              4,
+              32768,
+              1,
+              4,
+              32768,
+              32768,
+              1,
+              4,
+              32768,
+              1,
+              4,
+              5,
+              5,
+              1,
+              4,
+              5,
+              32773,
+              1,
+              4,
+              32768,
+              32773,
+              1,
+              1,
+              1,
+              4,
+              5,
+              1,
+              1
+            ]
+          },
+          {
+            "condition": "ai_info",
+            "operator": "=",
+            "value": [
+              512,
+              512,
+              512,
+              983040,
+              983040,
+              196608,
+              786432,
+              983040,
+              983040,
+              983040,
+              -1,
+              -1,
+              -1,
+              -1,
+              -1,
+              -1,
+              -1,
+              -1,
+              -1,
+              -1,
+              -1,
+              -1,
+              -1,
+              -1,
+              -1,
+              -1,
+              -1,
+              -1,
+              -1
+            ]
+          },
+          {
+            "condition": "ai_info",
+            "operator": "!=",
+            "value": [
+              983040,
+              983040,
+              983040,
+              -1,
+              -1,
+              -1,
+              -1,
+              -1,
+              -1,
+              -1,
+              983040,
+              983040,
+              983040,
+              983040,
+              983040,
+              983040,
+              983040,
+              983040,
+              983040,
+              983040,
+              983040,
+              983040,
+              -1,
+              -1,
+              -1,
+              -1,
+              -1,
+              -1,
+              -1
+            ]
+          },
+          {
+            "condition": "hd_scene",
+            "operator": "=",
+            "value": [
+              -1,
+              -1,
+              -1,
+              1,
+              1,
+              1,
+              1,
+              0,
+              0,
+              0,
+              -1,
+              -1,
+              -1,
+              -1,
+              -1,
+              -1,
+              -1,
+              -1,
+              -1,
+              -1,
+              -1,
+              -1,
+              -1,
+              -1,
+              -1,
+              -1,
+              -1,
+              -1,
+              -1
+            ]
+          },
+          {
+            "condition": "uizoom",
+            "operator": "<",
+            "value": [
+              -1,
+              -1,
+              -1,
+              -1,
+              -1,
+              -1,
+              -1,
+              -1,
+              -1,
+              -1,
+              6.45,
+              6.45,
+              6.45,
+              8.6,
+              8.6,
+              8.6,
+              8.6,
+              -1,
+              -1,
+              -1,
+              -1,
+              -1,
+              -1,
+              -1,
+              -1,
+              -1,
+              -1,
+              -1,
+              -1
+            ]
+          },
+          {
+            "condition": "uizoom",
+            "operator": ">=",
+            "value": [
+              -1,
+              -1,
+              -1,
+              -1,
+              -1,
+              8.6,
+              8.6,
+              -1,
+              -1,
+              8.6,
+              -1,
+              -1,
+              -1,
+              6.45,
+              6.45,
+              6.45,
+              6.45,
+              8.6,
+              8.6,
+              8.6,
+              8.6,
+              8.6,
+              -1,
+              -1,
+              -1,
+              -1,
+              -1,
+              -1,
+              -1
+            ]
+          },
+          {
+            "condition": "luxindex",
+            "operator": "<=",
+            "value": [
+              -1,
+              -1,
+              -1,
+              -1,
+              -1,
+              -1,
+              -1,
+              -1,
+              -1,
+              -1,
+              510,
+              510,
+              -1,
+              480,
+              510,
+              510,
+              -1,
+              480,
+              510,
+              510,
+              510,
+              -1,
+              510,
+              -1,
+              510,
+              510,
+              -1,
+              510,
+              -1
+            ]
+          },
+          {
+            "condition": "luxindex",
+            "operator": ">",
+            "value": [
+              -1,
+              -1,
+              -1,
+              -1,
+              -1,
+              -1,
+              -1,
+              -1,
+              -1,
+              -1,
+              -1,
+              -1,
+              480,
+              -1,
+              480,
+              480,
+              510,
+              -1,
+              480,
+              480,
+              480,
+              510,
+              -1,
+              510,
+              -1,
+              -1,
+              510,
+              -1,
+              510
+            ]
+          }
+        ]
+      }
+    },
+    "LIST": [
+      {
+        "Description": "V_0:binning + 7*ev0 adrc_on",
+        "frames": 7,
+        "ev_value": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "capture_mode": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "adrc_on": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "sensor_mode": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "ois_sync": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "motion_exp_type": [
+          -1,
+          -1,
+          -1,
+          -1,
+          -1,
+          -1,
+          -1
+        ]
+      },
+      {
+        "Description": "V_1: DXGcombine + 6*ev0 adrc_on",
+        "frames": 6,
+        "ev_value": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "capture_mode": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "adrc_on": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "sensor_mode": [
+          2,
+          2,
+          2,
+          2,
+          2,
+          2
+        ],
+        "ois_sync": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "motion_exp_type": [
+          -1,
+          -1,
+          -1,
+          -1,
+          -1,
+          -1
+        ]
+      },
+      {
+        "Description": "V_2: binning 2*ev0 + ev-- + ev- + ev0 + ev-- + ev+ adrc_off",
+        "frames": 7,
+        "ev_value": [
+          0,
+          0,
+          -2,
+          -1,
+          0,
+          -2,
+          1
+        ],
+        "capture_mode": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "adrc_on": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "sensor_mode": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "ois_sync": [
+          1,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "motion_exp_type": [
+          -1,
+          -1,
+          -1,
+          -1,
+          -1,
+          -1,
+          -1
+        ],
+        "enable_slave": true,
+        "slave_evlist_index": 0
+      },
+      {
+        "Description": "V_3: binning 2*ev0 + ev-- + ev- + ev0 + ev-- + ev+ adrc_on",
+        "frames": 7,
+        "ev_value": [
+          0,
+          0,
+          -2,
+          -1,
+          0,
+          -2,
+          1
+        ],
+        "capture_mode": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "adrc_on": [
+          1,
+          1,
+          0,
+          0,
+          1,
+          0,
+          1
+        ],
+        "sensor_mode": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "ois_sync": [
+          1,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "motion_exp_type": [
+          -1,
+          -1,
+          -1,
+          -1,
+          -1,
+          -1,
+          -1
+        ],
+        "enable_slave": true,
+        "slave_evlist_index": 0
+      },
+      {
+        "Description": "V_4: DXGcombine 2*ev0 + ev- + ev0 + ev- + ev0",
+        "frames": 6,
+        "ev_value": [
+          0,
+          0,
+          -2,
+          0,
+          -2,
+          0
+        ],
+        "capture_mode": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "adrc_on": [
+          1,
+          1,
+          0,
+          1,
+          0,
+          1
+        ],
+        "sensor_mode": [
+          2,
+          2,
+          2,
+          2,
+          2,
+          2
+        ],
+        "ois_sync": [
+          1,
+          1,
+          0,
+          0,
+          0,
+          1
+        ],
+        "motion_exp_type": [
+          -1,
+          -1,
+          -1,
+          -1,
+          -1,
+          -1
+        ]
+      },
+      {
+        "Description": "Single timepoint dual branch experiment",
+        "frames": 1,
+        "ev_value": [
+          0
+        ],
+        "capture_mode": [
+          0
+        ],
+        "adrc_on": [
+          1
+        ],
+        "sensor_mode": [
+          17
+        ],
+        "ois_sync": [
+          0
+        ],
+        "motion_exp_type": [
+          -1
+        ]
+      },
+      {
+        "Description": "V_6: binning 2*ev0 + ev-- + ev- + ev0 + ev-- + ev+ adrc_limit",
+        "frames": 7,
+        "ev_value": [
+          0,
+          0,
+          -2,
+          -1,
+          0,
+          -2,
+          1
+        ],
+        "capture_mode": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "adrc_on": [
+          1,
+          1,
+          0,
+          0,
+          1,
+          0,
+          1
+        ],
+        "sensor_mode": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "ois_sync": [
+          1,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "motion_exp_type": [
+          -1,
+          -1,
+          -1,
+          -1,
+          -1,
+          -1,
+          -1
+        ],
+        "adjust_adrc": true,
+        "enable_slave": true,
+        "slave_evlist_index": 0
+      },
+      {
+        "Description": "V_7: 50mquad + 2ev0 ev-- ev- ev0 ev-- ev0 adrc_limit",
+        "frames": 7,
+        "ev_value": [
+          0,
+          0,
+          -2,
+          -1,
+          0,
+          -2,
+          0
+        ],
+        "capture_mode": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "adrc_on": [
+          1,
+          1,
+          0,
+          0,
+          1,
+          0,
+          1
+        ],
+        "sensor_mode": [
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4
+        ],
+        "ois_sync": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "motion_exp_type": [
+          -1,
+          -1,
+          -1,
+          -1,
+          -1,
+          -1,
+          -1
+        ],
+        "adjust_adrc": true
+      },
+      {
+        "Description": "V_8: ISZquad + 2ev0 ev-- ev- ev0 ev-- ev0 adrc_limit",
+        "frames": 7,
+        "ev_value": [
+          0,
+          0,
+          -2,
+          -1,
+          0,
+          -2,
+          0
+        ],
+        "capture_mode": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "adrc_on": [
+          1,
+          1,
+          0,
+          0,
+          1,
+          0,
+          1
+        ],
+        "sensor_mode": [
+          15,
+          15,
+          15,
+          15,
+          15,
+          15,
+          15
+        ],
+        "ois_sync": [
+          1,
+          1,
+          0,
+          0,
+          0,
+          0,
+          1
+        ],
+        "motion_exp_type": [
+          -1,
+          -1,
+          -1,
+          -1,
+          -1,
+          -1,
+          -1
+        ],
+        "adjust_adrc": true,
+        "enable_slave": true,
+        "slave_evlist_index": 0
+      },
+      {
+        "Description": "V_9: ISZquad + 7*ev0 adrc_on",
+        "frames": 7,
+        "ev_value": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "capture_mode": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "adrc_on": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "sensor_mode": [
+          15,
+          15,
+          15,
+          15,
+          15,
+          15,
+          15
+        ],
+        "ois_sync": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "motion_exp_type": [
+          -1,
+          -1,
+          -1,
+          -1,
+          -1,
+          -1,
+          -1
+        ]
+      },
+      {
+        "Description": "V_10: iszqaud 2*ev0 + ev-- + ev- + ev0 + ev-- + ev0 adrc_on",
+        "frames": 7,
+        "ev_value": [
+          0,
+          0,
+          -2,
+          -1,
+          0,
+          -2,
+          0
+        ],
+        "capture_mode": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "adrc_on": [
+          1,
+          1,
+          0,
+          0,
+          1,
+          0,
+          1
+        ],
+        "sensor_mode": [
+          15,
+          15,
+          15,
+          15,
+          15,
+          15,
+          15
+        ],
+        "ois_sync": [
+          1,
+          1,
+          0,
+          0,
+          0,
+          0,
+          1
+        ],
+        "motion_exp_type": [
+          -1,
+          -1,
+          -1,
+          -1,
+          -1,
+          -1,
+          -1
+        ]
+      },
+      {
+        "Description": "V_11: binning 2*ev0 + ev-- + ev- + ev0 + ev-- + ev0 adrc_on",
+        "frames": 7,
+        "ev_value": [
+          0,
+          0,
+          -2,
+          -1,
+          0,
+          -2,
+          0
+        ],
+        "capture_mode": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "adrc_on": [
+          1,
+          1,
+          0,
+          0,
+          1,
+          0,
+          1
+        ],
+        "sensor_mode": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "ois_sync": [
+          1,
+          1,
+          0,
+          0,
+          0,
+          0,
+          1
+        ],
+        "motion_exp_type": [
+          -1,
+          -1,
+          -1,
+          -1,
+          -1,
+          -1,
+          -1
+        ]
+      },
+      {
+        "Description": "V_12: binning 2*ev0 + ev-- + ev- + ev0 + ev-- + ev0 adrc_limit",
+        "frames": 7,
+        "ev_value": [
+          0,
+          0,
+          -2,
+          -1,
+          0,
+          -2,
+          0
+        ],
+        "capture_mode": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "adrc_on": [
+          1,
+          1,
+          0,
+          0,
+          1,
+          0,
+          1
+        ],
+        "sensor_mode": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "ois_sync": [
+          1,
+          1,
+          0,
+          0,
+          0,
+          0,
+          1
+        ],
+        "motion_exp_type": [
+          -1,
+          -1,
+          -1,
+          -1,
+          -1,
+          -1,
+          -1
+        ],
+        "adjust_adrc": true,
+        "enable_slave": true,
+        "slave_evlist_index": 0
+      },
+      {
+        "Description": "V_13: binning 2*ev0 + ev-- + ev- + ev0 + ev-- + ev0 adrc_off",
+        "frames": 7,
+        "ev_value": [
+          0,
+          0,
+          -2,
+          -1,
+          0,
+          -2,
+          0
+        ],
+        "capture_mode": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "adrc_on": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "sensor_mode": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "ois_sync": [
+          1,
+          1,
+          0,
+          0,
+          0,
+          0,
+          1
+        ],
+        "motion_exp_type": [
+          -1,
+          -1,
+          -1,
+          -1,
+          -1,
+          -1,
+          -1
+        ],
+        "enable_slave": true,
+        "slave_evlist_index": 0
+      },
+      {
+        "Description": "V_14: ISZmquad + 2*ev0 ev-- ev- ev0 ev-- 5*ev0 adrc_on",
+        "frames": 11,
+        "ev_value": [
+          0,
+          0,
+          -2,
+          -1,
+          0,
+          -2,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "capture_mode": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "adrc_on": [
+          1,
+          1,
+          0,
+          0,
+          1,
+          0,
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "sensor_mode": [
+          15,
+          15,
+          15,
+          15,
+          15,
+          15,
+          15,
+          15,
+          15,
+          15,
+          15
+        ],
+        "ois_sync": [
+          1,
+          1,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0
+        ],
+        "motion_exp_type": [
+          -1,
+          -1,
+          -1,
+          -1,
+          -1,
+          -1,
+          -1,
+          -1,
+          -1,
+          -1,
+          -1
+        ]
+      },
+      {
+        "Description": "V_15: ISZmquad + 2*ev0 ev-- ev- ev0 ev-- 5*ev0 adrc_limit",
+        "frames": 11,
+        "ev_value": [
+          0,
+          0,
+          -2,
+          -1,
+          0,
+          -2,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "capture_mode": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "adrc_on": [
+          1,
+          1,
+          0,
+          0,
+          1,
+          0,
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "sensor_mode": [
+          15,
+          15,
+          15,
+          15,
+          15,
+          15,
+          15,
+          15,
+          15,
+          15,
+          15
+        ],
+        "ois_sync": [
+          1,
+          1,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0
+        ],
+        "motion_exp_type": [
+          -1,
+          -1,
+          -1,
+          -1,
+          -1,
+          -1,
+          -1,
+          -1,
+          -1,
+          -1,
+          -1
+        ],
+        "adjust_adrc": true
+      },
+      {
+        "Description": "V_16: binning 2*ev0 + ev-- + ev- + ev0 + ev-- + ev0 adrc_limit",
+        "frames": 7,
+        "ev_value": [
+          0,
+          0,
+          -2,
+          -1,
+          0,
+          -2,
+          0
+        ],
+        "capture_mode": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "adrc_on": [
+          1,
+          1,
+          0,
+          0,
+          1,
+          0,
+          1
+        ],
+        "sensor_mode": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "ois_sync": [
+          1,
+          1,
+          0,
+          0,
+          0,
+          0,
+          1
+        ],
+        "motion_exp_type": [
+          -1,
+          -1,
+          -1,
+          -1,
+          -1,
+          -1,
+          -1
+        ],
+        "adjust_adrc": true
+      },
+      {
+        "Description": "V_17: binning 2*ev0 + ev-- + ev- + ev0 + ev-- + ev0 adrc_on",
+        "frames": 7,
+        "ev_value": [
+          0,
+          0,
+          -2,
+          -1,
+          0,
+          -2,
+          0
+        ],
+        "capture_mode": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "adrc_on": [
+          1,
+          1,
+          0,
+          0,
+          1,
+          0,
+          1
+        ],
+        "sensor_mode": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "ois_sync": [
+          1,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "motion_exp_type": [
+          -1,
+          -1,
+          -1,
+          -1,
+          -1,
+          -1,
+          -1
+        ],
+        "enable_slave": true,
+        "slave_evlist_index": 0
+      }
+    ],
+    "SLAVE_LIST": [
+      {
+        "Description": "V_0: anchor , ev- , ev--",
+        "frames": 3,
+        "ev_value": [
+          2,
+          -1,
+          -2
+        ],
+        "capture_mode": [
+          0,
+          1,
+          1
+        ],
+        "adrc_on": [
+          1,
+          0,
+          0
+        ],
+        "sensor_mode": [
+          -1,
+          -1,
+          -1
+        ],
+        "motion_exp_type": [
+          -1,
+          -1,
+          -1
+        ]
+      },
+      {
+        "Description": "V_1: anchor , ev- , ev-",
+        "frames": 3,
+        "ev_value": [
+          2,
+          -1,
+          -1
+        ],
+        "capture_mode": [
+          0,
+          1,
+          1
+        ],
+        "adrc_on": [
+          1,
+          0,
+          0
+        ],
+        "sensor_mode": [
+          -1,
+          -1,
+          -1
+        ],
+        "motion_exp_type": [
+          -1,
+          -1,
+          -1
+        ]
+      }
+    ]
+  }
+}

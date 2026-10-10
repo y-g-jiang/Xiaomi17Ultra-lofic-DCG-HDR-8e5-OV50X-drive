@@ -17,7 +17,7 @@ public final class PtcPlan {
         if(!Double.isFinite(lowMs)||!Double.isFinite(highMs)||lowMs<LINE_NS/1e6||highMs<lowMs||highMs>1000)throw new IllegalArgumentException("要求最小一行至1000ms，终点不小于起点");
         ArrayList<Long> out=new ArrayList<>();
         for(int k=0;k<1000;k++){
-            double target=lowMs*1e6*Math.pow(2,k/6.0);if(target>=highMs*1e6)break;
+            double target=lowMs*1e6*Math.pow(2,k/3.0);if(target>=highMs*1e6)break;
             long ns=Math.min(1000000000L,(long)Math.ceil(Math.ceil(target/LINE_NS-1e-10)*LINE_NS));
             if(out.isEmpty()||out.get(out.size()-1)!=ns)out.add(ns);
         }

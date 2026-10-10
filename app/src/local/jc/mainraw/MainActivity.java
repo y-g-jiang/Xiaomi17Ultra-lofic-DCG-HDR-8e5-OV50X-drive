@@ -83,6 +83,7 @@ public class MainActivity extends Activity {
         });
         status = label("尚未打开相机。拍摄和解锁均由你操作。",14);
         open = button("打开主摄预览",v->openCamera());
+        button("快速 Hybrid：长驻设备切换 LOFIC / 50MP",v->startActivity(new Intent(this,FastHybridActivity.class)));
         capture = button("拍摄 DNG ＋ 参数记录",v->startCapture()); capture.setEnabled(false);
         button("停止连续拍摄",v->{ remaining=0; message("已请求停止；正在写入的一帧会正常完成。"); });
         label("曝光 / 对焦 / 白平衡",19);

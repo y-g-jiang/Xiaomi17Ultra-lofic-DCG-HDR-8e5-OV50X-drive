@@ -50,7 +50,7 @@ public final class NativeCaptureIndex {
             pair.pb=required(entries,bb+"port1_index"+bi+"_buffer0_phymetadata.bin");
             if(!convertedNames.add(allin.name)||!convertedNames.add(allinB.name))throw new IOException("Duplicate paired group");pairs.add(pair);
         }
-        if(pairs.isEmpty())throw new IOException("原生相机未输出完整的模式5 RAW14＋RAW10配对；本次不能生成 LOFIC HDR。请保持主摄1×、镜头前留出距离并改善场景照明后重试。");
+        if(pairs.isEmpty())throw new IOException("原生相机未输出完整的模式5 RAW14＋RAW10配对；本次不能生成 LOFIC HDR。会话诊断已保留，需要检查实际算法策略，不能仅凭预览或场景判断。");
         if(pairs.size()>8)throw new IOException("一次采集超过8组限制，请缩短采集窗口。");
         int nativeBuffers=0;
         for(Entry e:entries.values())if(e.name.matches("[0-9]{17}_AllinOne_4096x3072_input_[0-9]{2}\\.RAW")){
